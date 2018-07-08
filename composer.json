@@ -1,0 +1,42 @@
+{
+  "name":"classiq-startup",
+  "description": "Un site très simple réalisé avec Classiq. L'idée est d'avoir un point de départ pour ensuite modifier le projet.",
+  "type": "project",
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+
+  "autoload": {
+    "psr-4": {
+      "MonSite\\":      ["project/php-classes/MonSite/"]
+    }
+  },
+
+  "require": {
+    "davidmars/pov-2018": "dev-master",
+    "davidmars/classiq": "dev-master"
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/davidmars/pov-2018"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/davidmars/Classiq"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/davidmars/localization"
+    }
+  ],
+  "scripts": {
+    "post-install-cmd": [
+      "Pov\\Installer::install",
+      "Classiq\\Installer::install"
+    ],
+    "post-update-cmd": [
+      "Pov\\Installer::install",
+      "Classiq\\Installer::install"
+    ]
+  }
+}
