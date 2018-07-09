@@ -7,7 +7,8 @@
 
   "autoload": {
     "psr-4": {
-      "MonSite\\":      ["project/php-classes/MonSite/"]
+      "MonSite\\":      ["project/php-classes/MonSite/"],
+      "Classiq\\":      ["project/php-classes/Classiq/"]
     }
   },
 

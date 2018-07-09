@@ -1,0 +1,1 @@
+Dans ce répertoire on pourra mettre des Classes de modèles Redbean
