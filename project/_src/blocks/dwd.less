@@ -1,0 +1,28 @@
+.block.block-dwd {
+  label{
+    display: block;
+  }
+  a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    svg{
+      width: var(--spacing-big);
+      height: var(--spacing-big);
+      margin-right: var(--spacing-small);
+      border: 1px solid @color-grey-light;
+      border-radius: 100%;
+      padding: var(--spacing-small);
+    }
+    &:hover{
+      color: @color-fluo;
+      svg{
+        background-color: @color-fluo;
+        color: @color-fluo-complementaire;
+      }
+    }
+  }
+
+
+
+}
