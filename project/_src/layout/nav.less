@@ -1,0 +1,18 @@
+#nav{
+  //touch ou pas...
+  a{
+    color: currentColor;
+    text-decoration: none;
+  }
+  .active{
+    background-color: @color-fluo;
+  }
+  .logo{
+    width: var(--nav-bar-height,80px);
+    height: var(--nav-bar-height,80px);
+  }
+}
+@import "nav-burger.less";
+@import "nav-not-burger.less";
+
+

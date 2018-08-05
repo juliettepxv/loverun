@@ -1,0 +1,64 @@
+@media(min-width: @screen-xl){
+  #nav{
+
+    //couleurs etc....
+    a{
+      transition: all 0.5s;
+    }
+    background-color: @color-white;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: bold;
+
+    position: fixed;
+    z-index: @z-nav;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    height: var(--nav-bar-height,80px);
+
+    #nav-mask{
+      display: none;
+    }
+    #nav-bar{
+      display: flex;
+    }
+    #nav-content{
+      height: 100%;
+      display: flex;
+      flex-grow: 1;
+      justify-content: space-between;
+      .menu{
+        //la liste des liens
+      }
+      .right{
+        order: 3;
+      }
+    }
+    ul{
+      display: flex;
+      height: 100%;
+      li{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        >a{
+          height: 100%;
+          padding: var(--spacing-small);
+          display: flex;
+          align-items: center;
+        }
+      }
+    }
+
+
+
+
+
+
+  }
+
+
+
+}
