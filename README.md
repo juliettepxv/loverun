@@ -35,7 +35,8 @@ Vous pouvez installer tout ce qui est nécessaire à partir du package.json.
 //Lancez les commandes:
 npm-install
 composer-update
-build-svg-icons
+build-svg-icons (qui génère des libriarie d'icones svg)
+watch-dev (qui compile automatiquement les fichiers less et javascript dans le répertoire /dist)
 ```
 Une fois tout installé vous devez avoir des répéertoires
 * vendor (les librairies php installées depuis composer)

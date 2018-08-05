@@ -25,12 +25,26 @@ function trad($term){
     return the()->project->translation($term);
 }
 /**
- * Accès rapide vers les utilitaires
+ * Accès rapide vers les classes utilitaires
  * @return \Pov\Utils\Utils
  */
 function utils(){
     return pov()->utils;
 }
 
+/**
+ * Accès rapide vers methodes et variables propres au site
+ * @return \Startup\Site
+ */
+function site(){
+    return \Startup\Site::inst();
+}
+
 Lang::$flagsUrlBasePath="vendor/davidmars/localization/flags/";
+
+
+//config options
+//site()->googleApiKey="xxxxx"; //gmap etc...
+//site()->googleSiteVerification="xxxxx"; //google webmaster tools
+//site()->googleAnalyticsId="UA-xxxxxx"; //clé google analytics
 

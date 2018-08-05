@@ -1,0 +1,28 @@
+#footer{
+  background-color: @color-grey-dark;
+  color: @color-white;
+  a{
+    color: currentColor;
+    text-decoration: none;
+  }
+  .container{
+    ul{
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 15px;
+      li{
+        display: flex;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        @media(max-width: @screen-lg-max){
+          justify-content: center;
+        }
+      }
+    }
+
+
+  }
+
+
+
+}
