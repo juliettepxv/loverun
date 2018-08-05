@@ -23,6 +23,7 @@ export default class Site{
         require("./layout/NavMenu");
         NavMenu.__init();
 
+        require("./components/data-zoom-img");
         //require("./blocks/FormContact");
         //FormContact.initFromDom();
 

@@ -16,7 +16,6 @@ if($file){
             <div class="embed-responsive embed-responsive-16by9">
                 <video controls src="<?=$src?>"></video>
             </div>
-
         </div>
     <? else: ?>
         <div id="cq-style">

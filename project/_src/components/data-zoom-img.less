@@ -1,0 +1,37 @@
+[data-zoom-img]{
+  cursor: pointer;
+}
+#data-zoom-layer{
+  z-index: @z-zoom-layer;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  >.close{
+    position: absolute;
+    z-index: 1;
+    display: block;
+    right: var(--spacing-small);
+    top: var(--spacing-small);
+    width: var(--spacing-big);
+    height: var(--spacing-big);
+    svg{
+      color: #fff;
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .img-container{
+    background-size: contain;
+    margin: var(--spacing-big);
+    width: calc(100% - var(--spacing-big) * 2);
+    height: calc(100% - var(--spacing-big) * 2);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+
+}
