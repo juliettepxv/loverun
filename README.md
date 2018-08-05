@@ -55,6 +55,7 @@ Pour voir vos sites en anglais et en français allez sur :
 * `http://la-ou-est/configuré-votre/document-root/fr`
 
 ##Traductions
+
 ### Traductions d'interface
 * Allez sur `https://docs.google.com/spreadsheets/d/1kefhXt0Z7g0P2cGItQK4k_hqhSoFTMaJyvzNYjKeqw8`
 * Copiez le google sheet afin de pouvoir le modifier
@@ -68,7 +69,27 @@ Pour voir vos sites en anglais et en français allez sur :
     
     
 
+##Mise en ligne
 
+###Configuration de vos domaines et répertoires
+
+Dans le répertoire `configs/routes` vous trouverez un système de fichier qui reflète votre installation en local.
+Inspirez vous de ce système de fichiers pour votre mise en ligne.
+
+###Répertoires et fichiers
+
+Voici la liste des répertoires et fichiers à uploader.
+```
+|- configs
+|- dist
+|- files
+|- files
+|- project
+|- vendor
+|- .htaccess
+|- favicon.ico
+|- index.php
+```
 
 
 
