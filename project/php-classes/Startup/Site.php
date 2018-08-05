@@ -23,4 +23,15 @@ class Site extends AbstractSingleton
      * @var string identifiant Gogle analytics
      */
     public $googleAnalyticsId;
+    /**
+     * @var string[] liste des blocks possibles
+     */
+    public $blocksList=[
+        "blocks/texte",
+        "blocks/titre",
+        "blocks/img",
+        "blocks/iframe",
+        "blocks/video",
+        "blocks/dwd"
+    ];
 }
