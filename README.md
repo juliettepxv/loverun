@@ -91,6 +91,28 @@ Voici la liste des répertoires et fichiers à uploader.
 |- index.php
 ```
 
+###Options et performaces
+
+####SEO
+Dans la config des chacun de vos domaines ou répertoires;
+```
+//activer ou non le référencement naturel
+the()->configProjectUrl->seoActive=true; 
+
+//Configurer (ou pas) Google webmaster tools
+//site()->googleSiteVerification="xxxxx";
+
+//Configurer (ou pas) Google analytics
+//site()->googleAnalyticsId="UA-xxxxxx";
+```
+
+####Performances et debuggage
+Dans la config des chacun de vos domaines ou répertoires;
+```
+//En mettant sur false on ne va pas télécharger le csv des traductions, on garde la version en cache.
+the()->project->config_translations_debug=false;
+```
+
 
 
 

@@ -43,8 +43,3 @@ function site(){
 Lang::$flagsUrlBasePath="vendor/davidmars/localization/flags/";
 
 
-//config options
-//site()->googleApiKey="xxxxx"; //gmap etc...
-//site()->googleSiteVerification="xxxxx"; //google webmaster tools
-//site()->googleAnalyticsId="UA-xxxxxx"; //clé google analytics
-
