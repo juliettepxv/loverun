@@ -1,0 +1,34 @@
+@import "./fonts/open-sans.less";
+@import "./fonts/libre-baskerville.less";
+
+@font-normal:'Open Sans';
+@font-titre:'Libre Baskerville';
+body{
+  font-family: @font-normal;
+  font-size: 12px;
+  @media(min-width: @screen-sm){
+    font-size: 14px;
+  }
+  @media(min-width: @screen-xl){
+    font-size: 16px;
+  }
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: @font-titre;
+}
+h1{
+  font-size: 2em;
+}
+h2{
+  font-size: 1.5em;
+}
+h3{
+  font-size: 1.25em;
+}
+h4{
+  font-size: 1.15em;
+}
+h5{
+  font-size: 1em;
+}
+

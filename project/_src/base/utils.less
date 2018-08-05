@@ -1,0 +1,22 @@
+.clearfix::after{
+  display: block;
+  content: "";
+  clear: both;
+}
+.img-responsive{
+  display: inline-block;
+  width: 100%; //ie 11 bug
+  max-width: 100%;
+  height: auto;
+}
+
+.unstyled{
+  background-color: transparent;
+  border: 0;
+  outline: none;
+  color: inherit;
+}
+button.unstyled{
+  cursor: pointer;
+  appearance: none;
+}
