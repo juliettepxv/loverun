@@ -103,6 +103,20 @@
         }
 
       }
+
+      a{
+        &:after{
+          height: 100%;
+          width: 0;
+        }
+        &.active{
+          &:after{
+            height: 100%;
+            width: 3px;
+          }
+        }
+      }
+
     }
 
     ul.right{
@@ -115,7 +129,12 @@
       }
     }
 
+
+
   }
+
+
+
 
 
 
