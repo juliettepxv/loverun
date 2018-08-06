@@ -22,7 +22,6 @@ export default class Site{
 
         require("./layout/NavMenu");
         NavMenu.__init();
-
         require("./components/data-zoom-img");
         require("./components/data-is-lang");
         //require("./blocks/FormContact");
@@ -30,17 +29,19 @@ export default class Site{
 
         //ferme le menu quand on change d'url
         $body.on(EVENTS.HISTORY_CHANGE_URL,function(){
+            $body.attr("data-page-transition-state","start");
             //stope en attendant que la transition soit finie
             PovHistory.readyToinject=false;
             //dit qu'on est prêt à afficher la page (s'assure qu'on reste au moins une seconde sur l'écran de transition)
             setTimeout(function(){
                 PovHistory.readyToinject=true;
-            },1000);
+            },500);
             NavMenu.close();
         });
 
         //changement d'url et HTML injecté
         $body.on(EVENTS.HISTORY_CHANGE_URL_LOADED_INJECTED,function(){
+            $body.attr("data-page-transition-state","end");
             me.onDomChange();
             //scroll top
             $(window).scrollTop(0);

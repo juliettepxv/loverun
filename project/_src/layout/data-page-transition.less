@@ -1,0 +1,66 @@
+[data-page-transition-state]{
+  #main-content{
+    animation-iteration-count: 1;
+    animation-duration: 0.2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+  }
+}
+[data-page-transition-state="start"]{
+  #main-content{
+    animation-name: kf-to-left;
+  }
+}
+[data-page-transition-state="end"]{
+  #main-content{
+    animation-name: kf-from-right;
+  }
+  h1,h2,h3{
+    &:after{
+      transform: scaleX(0);
+      transform-origin: left;
+      animation-name:kf-grow-x;
+      animation-delay: 0.2s;
+      animation-duration: 0.2s;
+      animation-fill-mode: forwards;
+      animation-timing-function: ease-out;
+    }
+  }
+}
+
+@keyframes kf-to-left {
+  0%{
+    transform: translateX(0);
+  }
+  100%{
+    transform: translateX(-10%);
+    opacity: 0;
+  }
+}
+@keyframes kf-from-right {
+  0%{
+    opacity: 0;
+    transform: translateX(10%);
+  }
+  100%{
+    transform: translateX(0%);
+  }
+}
+
+
+@keyframes kf-grow-x {
+  0%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
+@keyframes kf-grow-x {
+  0%{
+    transform: scaleX(0);
+  }
+  100%{
+    transform: scaleX(1);
+  }
+}
