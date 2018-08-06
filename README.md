@@ -1,4 +1,4 @@
-#Classiq startup
+# Classiq startup
 L'objectif de ce repo est de vous permettre d'installer le CMS Classiq en un minimum de temps.
 Le CMS une fois installé offre un site volontairement simple et qui contient les fonctionnalités suivantes:
 * site anglais / français
@@ -16,7 +16,7 @@ Le CMS une fois installé offre un site volontairement simple et qui contient le
     
 
 
-##Prérequis
+## Prérequis
 
 On part du principe que sur votre machine sont installés:
 * php 7
@@ -24,9 +24,9 @@ On part du principe que sur votre machine sont installés:
 * composer
 * node js
 
-##Installation
+## Installation
 
-###Librairies
+### Librairies
 
 Vous pouvez installer tout ce qui est nécessaire à partir du package.json.
 
@@ -42,7 +42,7 @@ Une fois tout installé vous devez avoir des répéertoires
 * vendor (les librairies php installées depuis composer)
 * node_module (les librairies node js qui vous permettront de vous amuser avec webpack, less css, etc...)
 
-###Dans votre navigateur
+### Dans votre navigateur
 Allez sur :
 
 `http://la-ou-est/configuré-votre/document-root/_install.php`
@@ -54,14 +54,14 @@ Pour voir vos sites en anglais et en français allez sur :
 * `http://la-ou-est/configuré-votre/document-root/en`
 * `http://la-ou-est/configuré-votre/document-root/fr`
 
-##Traductions
+## Traductions
 
 ### Traductions d'interface
 * Allez sur `https://docs.google.com/spreadsheets/d/1kefhXt0Z7g0P2cGItQK4k_hqhSoFTMaJyvzNYjKeqw8`
 * Copiez le google sheet afin de pouvoir le modifier
 * Modifiez l'url dans vos fichiers de config (`configs/routes/etc..`)
 
-##Connectez-vous
+## Connectez-vous
 * Allez sur `http://la-ou-est/configuré-votre/document-root/fr/login`
 * identifiez-vous avec 
     * email: `admin@admin.com`
@@ -69,9 +69,9 @@ Pour voir vos sites en anglais et en français allez sur :
     
     
 
-##Mise en ligne
+## Mise en ligne
 
-###Configuration de vos domaines et répertoires
+### Configuration de vos domaines et répertoires
 
 Dans le répertoire `configs/routes` vous trouverez un système de fichier qui reflète votre installation en local.
 Inspirez vous de ce système de fichiers pour votre mise en ligne.
@@ -91,9 +91,9 @@ Voici la liste des répertoires et fichiers à uploader.
 |- index.php
 ```
 
-###Options et performaces
+### Options et performaces
 
-####SEO
+#### SEO
 Dans la config des chacun de vos domaines ou répertoires;
 ```
 //activer ou non le référencement naturel
@@ -106,7 +106,7 @@ the()->configProjectUrl->seoActive=true;
 //site()->googleAnalyticsId="UA-xxxxxx";
 ```
 
-####Performances et debuggage
+#### Performances et debuggage
 Dans la config des chacun de vos domaines ou répertoires;
 ```
 //En mettant sur false on ne va pas télécharger le csv des traductions, on garde la version en cache.
