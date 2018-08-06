@@ -7,8 +7,8 @@ the()->boot->loadProject("project");
 the()->project->langCode="zzz-langCode-zzz";
 the()->project->languages=["fr","en"];
 the()->project->languagesUrls=[
-    "fr"=>"zzz-fmkHttpRoot-zzz/fr",
-    "en"=>"zzz-fmkHttpRoot-zzz/en"
+    "fr"=>"zzz-httpHost-zzzzzz-fmkHttpRoot-zzz/fr",
+    "en"=>"zzz-httpHost-zzzzzz-fmkHttpRoot-zzz/en"
 ];
 
 // Traductions ui.
