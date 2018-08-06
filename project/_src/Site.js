@@ -24,6 +24,7 @@ export default class Site{
         NavMenu.__init();
 
         require("./components/data-zoom-img");
+        //require("./components/data-is-lang");
         //require("./blocks/FormContact");
         //FormContact.initFromDom();
 
@@ -45,7 +46,7 @@ export default class Site{
             $(window).scrollTop(0);
             Site.navActive();
 
-            if(gtag){
+            if(typeof gtag !== 'undefined'){
                 //hit google analytics
                 gtag('config', 'UA-XXXXXX', {'page_path': location.pathname});
             }
