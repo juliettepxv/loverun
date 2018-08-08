@@ -13,7 +13,6 @@ $view->inside("layout/layout",$vv);
                 ->htmlTag("h1")
                 ->addClass("mb-big")
             ?>
-            </h1>
         </div>
 
         <?=$vv->wysiwyg()->field("blocks")
