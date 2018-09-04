@@ -34,4 +34,13 @@ class Site extends AbstractSingleton
         "blocks/video",
         "blocks/dwd"
     ];
+
+    /**
+     * Renvoie la home page
+     * @return \Classiq\Models\Page|null
+     * @throws \Pov\PovException
+     */
+    public function homePage(){
+        return cq()->homePage();
+    }
 }
