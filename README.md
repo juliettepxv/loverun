@@ -5,14 +5,20 @@ Le CMS une fois installé offre un site volontairement simple et qui contient le
 * page d'accueil
 * page exemple
 * 404 qui redirige vers la home
-* Une inderface d'administration WYSIWYG
+* Une interface d'administration WYSIWYG
 * quelques blocks
     * Titre
     * Texte
     * Image
     * Iframe
-    * liste de pages
-    * grille de photos
+    * Vidéo MP4
+    * Téléchargement
+    * liste de pages **TODO**
+    * grille de photos **TODO**
+* layout responsive
+    * Menu de nav
+    * footer
+  
     
 
 
@@ -35,6 +41,7 @@ Vous pouvez installer tout ce qui est nécessaire à partir du package.json.
 //Lancez les commandes:
 npm-install
 composer-update
+//attendez que les deux commandes précédentes soient finies
 build-svg-icons (qui génère des libriarie d'icones svg)
 watch-dev (qui compile automatiquement les fichiers less et javascript dans le répertoire /dist)
 ```
