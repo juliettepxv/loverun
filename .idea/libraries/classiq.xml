@@ -2,11 +2,11 @@
   <library name="classiq" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/vendor/davidmars/classiq" />
+        <item url="file://$PROJECT_DIR$/vendor/davidmars/classiq/Classiq/_src" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/vendor/davidmars/classiq" />
+      <root url="file://$PROJECT_DIR$/vendor/davidmars/classiq/Classiq/_src" />
     </CLASSES>
     <SOURCES />
   </library>

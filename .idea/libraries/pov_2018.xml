@@ -2,11 +2,11 @@
   <library name="pov-2018" type="javaScript">
     <properties>
       <sourceFilesUrls>
-        <item url="file://$PROJECT_DIR$/vendor/davidmars/pov-2018" />
+        <item url="file://$PROJECT_DIR$/vendor/davidmars/pov-2018/_src" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/vendor/davidmars/pov-2018" />
+      <root url="file://$PROJECT_DIR$/vendor/davidmars/pov-2018/_src" />
     </CLASSES>
     <SOURCES />
   </library>
