@@ -85,7 +85,8 @@ var cssOptions={
 
 module.exports = {
     entry: {
-        app:        "./project/_src/app.js" //le site pour monsieur tout le monde
+        "app":        "./project/_src/app.js", //le site pour monsieur tout le monde,
+        "app-wysiwyg":        "./project/_src/app-wysiwyg.js" //quand on est loggué en wysiwyg
     },
     output: {
         filename: '[name].js',

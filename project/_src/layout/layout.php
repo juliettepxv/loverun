@@ -25,6 +25,10 @@ if(is_a($vv,"\Classiq\Models\Page")){
 if(!the()->requestUrl->isAjax){
     the()->htmlLayout()->addJsToFooter("dist/app.js");
     the()->htmlLayout()->addCssToHeader("dist/app.css");
+    if(\Classiq\Wysiwyg\Wysiwyg::$enabled){
+        the()->htmlLayout()->addJsToFooter("dist/app-wysiwyg.js");
+        the()->htmlLayout()->addCssToHeader("dist/app-wysiwyg.css");
+    }
     if(site()->googleApiKey){
         the()->htmlLayout()->install()->googleMap(site()->googleApiKey,"places");
     }
