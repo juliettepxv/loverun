@@ -2,6 +2,7 @@
 use Classiq\Classiq;
 use Classiq\Models\User;
 use Classiq\Wysiwyg\Wysiwyg;
+use Classiq\Wysiwyg\WysiwygConfig;
 use Localization\Lang;
 
 //----------bdd-------------------
@@ -16,6 +17,13 @@ Classiq::install();
 if(User::connected()){
     the()->human->isAdmin = Wysiwyg::$enabled = User::connected()->isAdmin();
 }
+if(the()->human->isAdmin){
+    //conf backoffice
+    //\Classiq\Wysiwyg\WysiwygConfig::inst()->recordsWeCanBrowse=["Page","Monmodelecustom"];
+    //\Classiq\Wysiwyg\WysiwygConfig::inst()->recordsWeCanCreate=["Page","Monmodelecustom"];
+    //\Classiq\Wysiwyg\WysiwygConfig::inst()->recordsWeCanSelect=["Page","Monmodelecustom"]; 
+}
+
 /**
  * Pour avoir des textes d'interface
  * @param string $term
