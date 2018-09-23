@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="classiq" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/vendor/davidmars/classiq" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/vendor/davidmars/classiq" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>

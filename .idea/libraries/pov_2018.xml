@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="pov-2018" type="javaScript">
+    <properties>
+      <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/vendor/davidmars/pov-2018" />
+      </sourceFilesUrls>
+    </properties>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/vendor/davidmars/pov-2018" />
+    </CLASSES>
+    <SOURCES />
+  </library>
+</component>
