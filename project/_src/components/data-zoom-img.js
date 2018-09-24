@@ -1,3 +1,4 @@
+"use strict";
 var DataZoomImg={
 
     display:function($btn){
@@ -10,8 +11,29 @@ var DataZoomImg={
             //bouton fermer
             $zoomLayer.find(".close").on("click",function(){
                 $zoomLayer.remove();
+                $body.off('keydown',"#data-zoom-layer");
             });
         }
+
+
+        //touche prev / next
+        $zoomLayer.find(".close").focus();
+        $body.off('keydown',"#data-zoom-layer");
+        $body.on('keydown',"#data-zoom-layer",listenKeys );
+        function listenKeys(event){
+            console.log(event.keyCode);
+            switch(event.keyCode){
+                case 39:
+                case 40:
+                    next();
+                    break;
+                case 37:
+                case 38:
+                    prev();
+                    break;
+            }
+        }
+
 
         //charge l'image
         let url=$btn.attr("data-zoom-img");
@@ -25,9 +47,16 @@ var DataZoomImg={
         let $allZooms=$("[data-zoom-img]");
         let $prev=null;
         let $next=null;
-        let found=false;
-        let $beforeInList;
-
+        function prev(){
+            if($prev && $prev.length){
+                DataZoomImg.display($prev)
+            }
+        }
+        function next(){
+            if($next && $next.length){
+                DataZoomImg.display($next)
+            }
+        }
         for(let i=0; i< $allZooms.length ;i++){
             let $curr=$($allZooms[i]);
             if($curr.is($btn)){
@@ -36,24 +65,24 @@ var DataZoomImg={
                 break
             }
         }
-
         if($next && $next.length){
             $btnNext.css("display","");
             $btnNext.on("click",function(){
-                DataZoomImg.display($next)
+                next();
             });
         }else{
             $btnNext.css("display","none");
         }
-
         if($prev && $prev.length){
             $btnPrev.css("display","");
             $btnPrev.on("click",function(){
-                DataZoomImg.display($prev)
+                prev();
             });
         }else{
             $btnPrev.css("display","none");
         }
+
+
     }
 };
 
