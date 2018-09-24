@@ -10,12 +10,11 @@
   height: 100%;
   background-color: rgba(0, 0, 0, 0.9);
   color: #fff;
-  >.close{
+
+  >.close,.next,.prev{
     position: absolute;
     z-index: 1;
     display: block;
-    right: var(--spacing-small);
-    top: var(--spacing-small);
     width: var(--spacing-big);
     height: var(--spacing-big);
     svg{
@@ -24,6 +23,22 @@
       height: 100%;
     }
   }
+
+  >.close{
+    right: var(--spacing-small);
+    top: var(--spacing-small);
+  }
+  >.prev{
+    left: var(--spacing-small);
+    top: 50%;
+  }
+  >.next{
+    right: var(--spacing-small);
+    top: 50%;
+  }
+
+
+
   .img-container{
     background-size: contain;
     margin: var(--spacing-big);
