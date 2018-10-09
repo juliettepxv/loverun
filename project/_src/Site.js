@@ -47,9 +47,9 @@ export default class Site{
             $(window).scrollTop(0);
             Site.navActive();
 
-            if(typeof gtag !== 'undefined'){
+            if(typeof gtag !== 'undefined' && LayoutVars.googleAnalyticsId){
                 //hit google analytics
-                gtag('config', 'UA-XXXXXX', {'page_path': location.pathname});
+                gtag('config', LayoutVars.googleAnalyticsId, {'page_path': location.pathname});
             }
 
         });
