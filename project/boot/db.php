@@ -17,3 +17,7 @@ db()->setup(
 db()->debug(true,1);
 //db()->fancyDebug(true);
 //db()->freeze(true);
+
+
+//Exemple pour ordonner différemment les user par exemple
+//\Classiq\Models\User::$DEFAULT_ORDER_BY="role, name";
