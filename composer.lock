@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/Classiq.git",
-                "reference": "33b2721bb913551a3a505795f050de0425d698e5"
+                "reference": "a59604be008e91686307341e875153e9fae22062"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/33b2721bb913551a3a505795f050de0425d698e5",
-                "reference": "33b2721bb913551a3a505795f050de0425d698e5",
+                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/a59604be008e91686307341e875153e9fae22062",
+                "reference": "a59604be008e91686307341e875153e9fae22062",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 "source": "https://github.com/davidmars/Classiq/tree/master",
                 "issues": "https://github.com/davidmars/Classiq/issues"
             },
-            "time": "2018-07-18T11:36:22+00:00"
+            "time": "2018-10-30T14:56:25+00:00"
         },
         {
             "name": "davidmars/localization",
@@ -49,12 +49,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/localization.git",
-                "reference": "7c7cc12c96b845deca86c371f48d8ce0c01d4954"
+                "reference": "4aa4696ee1a840610cb56fa37c90c9a4d929db2e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/localization/zipball/7c7cc12c96b845deca86c371f48d8ce0c01d4954",
-                "reference": "7c7cc12c96b845deca86c371f48d8ce0c01d4954",
+                "url": "https://api.github.com/repos/davidmars/localization/zipball/4aa4696ee1a840610cb56fa37c90c9a4d929db2e",
+                "reference": "4aa4696ee1a840610cb56fa37c90c9a4d929db2e",
                 "shasum": ""
             },
             "type": "library",
@@ -76,7 +76,7 @@
                 "source": "https://github.com/davidmars/localization/tree/master",
                 "issues": "https://github.com/davidmars/localization/issues"
             },
-            "time": "2018-06-06T10:43:21+00:00"
+            "time": "2018-10-24T12:16:55+00:00"
         },
         {
             "name": "davidmars/monolog-parser",
@@ -127,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/pov-2018.git",
-                "reference": "ba3477666b3b84c1276b54863651d26cf296baef"
+                "reference": "578e38bcc72d07072cd3ef6912c6afb5c5a2f4ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/pov-2018/zipball/ba3477666b3b84c1276b54863651d26cf296baef",
-                "reference": "ba3477666b3b84c1276b54863651d26cf296baef",
+                "url": "https://api.github.com/repos/davidmars/pov-2018/zipball/578e38bcc72d07072cd3ef6912c6afb5c5a2f4ed",
+                "reference": "578e38bcc72d07072cd3ef6912c6afb5c5a2f4ed",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +152,7 @@
                 "source": "https://github.com/davidmars/pov-2018/tree/master",
                 "issues": "https://github.com/davidmars/pov-2018/issues"
             },
-            "time": "2018-07-27T12:28:38+00:00"
+            "time": "2018-10-30T14:54:20+00:00"
         },
         {
             "name": "davidmars/redbean",
@@ -332,16 +332,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.66",
+            "version": "v1.2.73",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "55ad4b140d821c19dbaf1a6ea9d9e5ca6444ecc1"
+                "reference": "3783b88b686dfd8f0c752f829caaf1bcace581ef"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/55ad4b140d821c19dbaf1a6ea9d9e5ca6444ecc1",
-                "reference": "55ad4b140d821c19dbaf1a6ea9d9e5ca6444ecc1",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/3783b88b686dfd8f0c752f829caaf1bcace581ef",
+                "reference": "3783b88b686dfd8f0c752f829caaf1bcace581ef",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +377,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-07-30T20:23:10+00:00"
+            "time": "2018-10-31T13:15:59+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -447,16 +447,16 @@
         },
         {
             "name": "mobiledetect/mobiledetectlib",
-            "version": "2.8.32",
+            "version": "2.8.33",
             "source": {
                 "type": "git",
                 "url": "https://github.com/serbanghita/Mobile-Detect.git",
-                "reference": "ec69a0c381b5fe44547680d3c7db6ced08e5abb3"
+                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/ec69a0c381b5fe44547680d3c7db6ced08e5abb3",
-                "reference": "ec69a0c381b5fe44547680d3c7db6ced08e5abb3",
+                "url": "https://api.github.com/repos/serbanghita/Mobile-Detect/zipball/cd385290f9a0d609d2eddd165a1e44ec1bf12102",
+                "reference": "cd385290f9a0d609d2eddd165a1e44ec1bf12102",
                 "shasum": ""
             },
             "require": {
@@ -495,20 +495,20 @@
                 "mobile detector",
                 "php mobile detect"
             ],
-            "time": "2018-06-03T13:13:04+00:00"
+            "time": "2018-09-01T15:05:15+00:00"
         },
         {
             "name": "monolog/monolog",
-            "version": "1.23.0",
+            "version": "1.24.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4"
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
-                "reference": "fd8c787753b3a2ad11bc60c063cff1358a32a3b4",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
+                "reference": "bfc9ebb28f97e7a24c45bdc3f0ff482e47bb0266",
                 "shasum": ""
             },
             "require": {
@@ -573,7 +573,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2017-06-19T01:22:40+00:00"
+            "time": "2018-11-05T09:00:11+00:00"
         },
         {
             "name": "phpmailer/phpmailer",
