@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "141350fa902d9406f644a8aa6ba66d47",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/Classiq.git",
-                "reference": "a59604be008e91686307341e875153e9fae22062"
+                "reference": "36704aeb3725f2553b15f0638757e3a5491e8bca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/a59604be008e91686307341e875153e9fae22062",
-                "reference": "a59604be008e91686307341e875153e9fae22062",
+                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/36704aeb3725f2553b15f0638757e3a5491e8bca",
+                "reference": "36704aeb3725f2553b15f0638757e3a5491e8bca",
                 "shasum": ""
             },
             "require": {
@@ -38,10 +38,10 @@
             },
             "description": "Classiq est conçu pour créer des sites internet administrables en wysiwyg.",
             "support": {
-                "source": "https://github.com/davidmars/Classiq/tree/master",
+                "source": "https://github.com/davidmars/Classiq/tree/0.0.7",
                 "issues": "https://github.com/davidmars/Classiq/issues"
             },
-            "time": "2018-10-30T14:56:25+00:00"
+            "time": "2018-12-07T05:50:42+00:00"
         },
         {
             "name": "davidmars/localization",
@@ -127,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/pov-2018.git",
-                "reference": "578e38bcc72d07072cd3ef6912c6afb5c5a2f4ed"
+                "reference": "b7ab90da32e5d203367bef48fbaa05ec6f0e6b2b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/pov-2018/zipball/578e38bcc72d07072cd3ef6912c6afb5c5a2f4ed",
-                "reference": "578e38bcc72d07072cd3ef6912c6afb5c5a2f4ed",
+                "url": "https://api.github.com/repos/davidmars/pov-2018/zipball/b7ab90da32e5d203367bef48fbaa05ec6f0e6b2b",
+                "reference": "b7ab90da32e5d203367bef48fbaa05ec6f0e6b2b",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +152,7 @@
                 "source": "https://github.com/davidmars/pov-2018/tree/master",
                 "issues": "https://github.com/davidmars/pov-2018/issues"
             },
-            "time": "2018-10-30T14:54:20+00:00"
+            "time": "2018-12-06T16:40:51+00:00"
         },
         {
             "name": "davidmars/redbean",
@@ -197,32 +197,33 @@
         },
         {
             "name": "guzzlehttp/psr7",
-            "version": "1.4.2",
+            "version": "1.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/psr7.git",
-                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c"
+                "reference": "9f83dded91781a01c63574e387eaa769be769115"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/psr7/zipball/f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
-                "reference": "f5b8a8512e2b58b0071a7280e39f14f72e05d87c",
+                "url": "https://api.github.com/repos/guzzle/psr7/zipball/9f83dded91781a01c63574e387eaa769be769115",
+                "reference": "9f83dded91781a01c63574e387eaa769be769115",
                 "shasum": ""
             },
             "require": {
                 "php": ">=5.4.0",
-                "psr/http-message": "~1.0"
+                "psr/http-message": "~1.0",
+                "ralouphie/getallheaders": "^2.0.5"
             },
             "provide": {
                 "psr/http-message-implementation": "1.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "~4.0"
+                "phpunit/phpunit": "~4.8.36 || ^5.7.27 || ^6.5.8"
             },
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.4-dev"
+                    "dev-master": "1.5-dev"
                 }
             },
             "autoload": {
@@ -252,13 +253,14 @@
             "keywords": [
                 "http",
                 "message",
+                "psr-7",
                 "request",
                 "response",
                 "stream",
                 "uri",
                 "url"
             ],
-            "time": "2017-03-20T17:10:46+00:00"
+            "time": "2018-12-04T20:46:45+00:00"
         },
         {
             "name": "intervention/image",
@@ -332,16 +334,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.73",
+            "version": "v1.2.75",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "3783b88b686dfd8f0c752f829caaf1bcace581ef"
+                "reference": "50e06c81bea8a9c443708be496868ccb55bdd396"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/3783b88b686dfd8f0c752f829caaf1bcace581ef",
-                "reference": "3783b88b686dfd8f0c752f829caaf1bcace581ef",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/50e06c81bea8a9c443708be496868ccb55bdd396",
+                "reference": "50e06c81bea8a9c443708be496868ccb55bdd396",
                 "shasum": ""
             },
             "require": {
@@ -377,7 +379,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-10-31T13:15:59+00:00"
+            "time": "2018-12-10T19:38:45+00:00"
         },
         {
             "name": "jenssegers/agent",
@@ -577,16 +579,16 @@
         },
         {
             "name": "phpmailer/phpmailer",
-            "version": "v6.0.5",
+            "version": "v6.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/PHPMailer/PHPMailer.git",
-                "reference": "cb3ea134d4d3729e7857737d5f320cce9caf4d32"
+                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/cb3ea134d4d3729e7857737d5f320cce9caf4d32",
-                "reference": "cb3ea134d4d3729e7857737d5f320cce9caf4d32",
+                "url": "https://api.github.com/repos/PHPMailer/PHPMailer/zipball/8190d73eb5def11a43cfb020b7f36db65330698c",
+                "reference": "8190d73eb5def11a43cfb020b7f36db65330698c",
                 "shasum": ""
             },
             "require": {
@@ -639,7 +641,7 @@
                 }
             ],
             "description": "PHPMailer is a full-featured email creation and transfer class for PHP",
-            "time": "2018-03-27T13:49:45+00:00"
+            "time": "2018-11-16T00:41:32+00:00"
         },
         {
             "name": "psr/http-message",
@@ -693,16 +695,16 @@
         },
         {
             "name": "psr/log",
-            "version": "1.0.2",
+            "version": "1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/php-fig/log.git",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d"
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/php-fig/log/zipball/4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
-                "reference": "4ebe3a8bf773a19edfe0a84b6585ba3d401b724d",
+                "url": "https://api.github.com/repos/php-fig/log/zipball/6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
+                "reference": "6c001f1daafa3a3ac1d8ff69ee4db8e799a654dd",
                 "shasum": ""
             },
             "require": {
@@ -736,20 +738,60 @@
                 "psr",
                 "psr-3"
             ],
-            "time": "2016-10-10T12:19:37+00:00"
+            "time": "2018-11-20T15:27:04+00:00"
         },
         {
-            "name": "wixel/gump",
-            "version": "v1.5.6",
+            "name": "ralouphie/getallheaders",
+            "version": "2.0.5",
             "source": {
                 "type": "git",
-                "url": "https://github.com/Wixel/GUMP.git",
-                "reference": "6452af9980a708e6a8ab2b6b912222a23c22949b"
+                "url": "https://github.com/ralouphie/getallheaders.git",
+                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/6452af9980a708e6a8ab2b6b912222a23c22949b",
-                "reference": "6452af9980a708e6a8ab2b6b912222a23c22949b",
+                "url": "https://api.github.com/repos/ralouphie/getallheaders/zipball/5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "reference": "5601c8a83fbba7ef674a7369456d12f1e0d0eafa",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~3.7.0",
+                "satooshi/php-coveralls": ">=1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "files": [
+                    "src/getallheaders.php"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Ralph Khattar",
+                    "email": "ralph.khattar@gmail.com"
+                }
+            ],
+            "description": "A polyfill for getallheaders.",
+            "time": "2016-02-11T07:05:27+00:00"
+        },
+        {
+            "name": "wixel/gump",
+            "version": "v1.5.7",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Wixel/GUMP.git",
+                "reference": "b32c92206fb7014a40179b8468ba8bab90b3f879"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Wixel/GUMP/zipball/b32c92206fb7014a40179b8468ba8bab90b3f879",
+                "reference": "b32c92206fb7014a40179b8468ba8bab90b3f879",
                 "shasum": ""
             },
             "type": "library",
@@ -774,7 +816,7 @@
             ],
             "description": "A fast, extensible & stand-alone PHP input validation class that allows you to validate any data",
             "homepage": "https://wixelhq.com/",
-            "time": "2017-08-04T16:37:43+00:00"
+            "time": "2018-06-02T23:09:34+00:00"
         }
     ],
     "packages-dev": [],
