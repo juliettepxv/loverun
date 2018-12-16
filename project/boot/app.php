@@ -24,6 +24,9 @@ if(the()->human->isAdmin){
     //\Classiq\Wysiwyg\WysiwygConfig::inst()->recordsWeCanSelect=["Page","Monmodelecustom"]; 
 }
 
+//seo
+//\Classiq\Seo\C_sitemap_xml::$modelTypesToIndex=["page","modeleetc"];
+
 /**
  * Pour avoir des textes d'interface
  * @param string $term
