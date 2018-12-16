@@ -30,12 +30,8 @@ $menu=\Classiq\Models\Nav::getByName("menu",true);
         ?>
 
         <ul class="right">
-            <?foreach (cq()->langActives(false) as $langCode):?>
-                <li>
-                    <a class="<?=the()->project->langCode==$langCode?"active":""?>"
-                       data-is-lang="<?=$langCode?>" href="#"><?=$langCode?></a>
-                </li>
-            <?endforeach;?>
+            <?=$view->render("./menu-languages")?>
+
         </ul>
 
     </div>
