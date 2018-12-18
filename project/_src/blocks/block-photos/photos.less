@@ -1,0 +1,31 @@
+.block.block-photos{
+
+  --unit:45vw;
+  @media(min-width: @screen-sm){
+    --unit:270px;
+  }
+  @media(min-width: @screen-md){
+    --unit:180px;
+  }
+  @media(min-width: @screen-lg){
+    --unit:240px;
+  }
+  @media(min-width: @screen-xl){
+    --unit:285px;
+  }
+
+  .row{
+    >div{
+      position: relative;
+      height: calc( var(--unit) - var(--spacing-medium) * 1);
+      margin-bottom: var(--spacing-medium);
+      .img{
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+    }
+  }
+}
