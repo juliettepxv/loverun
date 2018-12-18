@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/Classiq.git",
-                "reference": "4b8afb9bbf2401d1393da691dd7bf9d7113f45b2"
+                "reference": "607415f2bc2d5547def8fb605c30b230514aca78"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/4b8afb9bbf2401d1393da691dd7bf9d7113f45b2",
-                "reference": "4b8afb9bbf2401d1393da691dd7bf9d7113f45b2",
+                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/607415f2bc2d5547def8fb605c30b230514aca78",
+                "reference": "607415f2bc2d5547def8fb605c30b230514aca78",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 "source": "https://github.com/davidmars/Classiq/tree/master",
                 "issues": "https://github.com/davidmars/Classiq/issues"
             },
-            "time": "2018-12-16T08:05:32+00:00"
+            "time": "2018-12-18T08:50:33+00:00"
         },
         {
             "name": "davidmars/localization",
