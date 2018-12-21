@@ -1,7 +1,7 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
     "content-hash": "141350fa902d9406f644a8aa6ba66d47",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/Classiq.git",
-                "reference": "607415f2bc2d5547def8fb605c30b230514aca78"
+                "reference": "e2b6336446ed54c7e251502f63df586e1ee7f907"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/607415f2bc2d5547def8fb605c30b230514aca78",
-                "reference": "607415f2bc2d5547def8fb605c30b230514aca78",
+                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/e2b6336446ed54c7e251502f63df586e1ee7f907",
+                "reference": "e2b6336446ed54c7e251502f63df586e1ee7f907",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 "source": "https://github.com/davidmars/Classiq/tree/master",
                 "issues": "https://github.com/davidmars/Classiq/issues"
             },
-            "time": "2018-12-18T08:50:33+00:00"
+            "time": "2018-12-20T04:59:09+00:00"
         },
         {
             "name": "davidmars/localization",
@@ -334,16 +334,16 @@
         },
         {
             "name": "jaybizzle/crawler-detect",
-            "version": "v1.2.75",
+            "version": "v1.2.76",
             "source": {
                 "type": "git",
                 "url": "https://github.com/JayBizzle/Crawler-Detect.git",
-                "reference": "50e06c81bea8a9c443708be496868ccb55bdd396"
+                "reference": "728dd7f210819ccafbf008a6ef7956f4f3c3571c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/50e06c81bea8a9c443708be496868ccb55bdd396",
-                "reference": "50e06c81bea8a9c443708be496868ccb55bdd396",
+                "url": "https://api.github.com/repos/JayBizzle/Crawler-Detect/zipball/728dd7f210819ccafbf008a6ef7956f4f3c3571c",
+                "reference": "728dd7f210819ccafbf008a6ef7956f4f3c3571c",
                 "shasum": ""
             },
             "require": {
@@ -379,7 +379,7 @@
                 "crawlerdetect",
                 "php crawler detect"
             ],
-            "time": "2018-12-10T19:38:45+00:00"
+            "time": "2018-12-18T08:52:44+00:00"
         },
         {
             "name": "jenssegers/agent",
