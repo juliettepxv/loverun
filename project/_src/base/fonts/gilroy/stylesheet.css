@@ -1,3 +1,4 @@
+/*
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-Bold.woff2') format('woff2'),
@@ -29,7 +30,7 @@
     font-weight: 500;
     font-style: normal;
 }
-
+*/
 @font-face {
     font-family: 'Gilroy';
     src: url('Gilroy-ExtraBold.woff2') format('woff2'),
