@@ -57,21 +57,22 @@ $view->inside("layout/layout", $vv);
 
         <div class="bg-white pxy-big my-small">
             <h5 class="py-small h4 pink">.h4.pink</h5>
-            <div class="btn">
+                <a class="btn" href="#">
                 .btn en savoir +
-            </div>
+                </a>
         </div>
 
-        <div class="btn mr-small">
+        <a class="btn mr-small" href="#">
             .btn en savoir +
-        </div>
-        <div class="btn-big">
+        </a>
+        <a class="btn-big" href="#">
             .btn-big en savoir +
-        </div>
+        </a>
         <div class=" py-big">
-             <span class="my-big">
+            <span class="my-big">
             <?= file_get_contents("project/svg/double-trait.svg") ?>
             </span>
+
             <span class="my-big"">
             <?= file_get_contents("project/svg/petit-trait.svg") ?>
             </span>
@@ -85,9 +86,9 @@ $view->inside("layout/layout", $vv);
 
     <div class="bg-gradient pxy-big my-small">
 
-        <div class="btn">
+        <a class="btn" href="#">
             .btn en savoir +
-        </div>
+        </a>
 
         <div class="my-big">
             <?= file_get_contents("project/svg/slash.svg") ?>
