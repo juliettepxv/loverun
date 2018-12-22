@@ -24,6 +24,7 @@ $menu=\Classiq\Models\Nav::getByName("menu",true);
             ->listJson(["layout/item"])
             ->horizontal()
             ->contextMenuSize(SIZE_SMALL)
+            ->contextMenuPosition(POSITION_TOP)
             ->onlyRecords("page")
             ->htmlTag("ul")
             ->addClass("menu")

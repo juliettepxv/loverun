@@ -1,6 +1,7 @@
 #footer{
-  background-color: @color-grey-dark;
-  color: @color-white;
+  border-top: 1px solid currentColor;
+  background-color: @color-white;
+  color: @color-blue;
   a{
     color: currentColor;
     text-decoration: none;
@@ -9,11 +10,23 @@
     ul{
       display: flex;
       flex-direction: column;
-      margin-bottom: 15px;
+      align-items: center;
+      @media(min-width: @screen-lg){
+        flex-direction: row;
+        justify-content: space-between;
+      }
       li{
+        padding-top: 0.5em;
+        padding-bottom: 0.5em;
+        @media(min-width: @screen-lg){
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        a{
+          line-height: 1;
+        }
         display: flex;
-        padding-top: 5px;
-        padding-bottom: 5px;
+
         @media(max-width: @screen-sm-max){
           justify-content: center;
         }

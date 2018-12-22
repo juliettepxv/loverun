@@ -5,7 +5,7 @@
 
 body{
   font-family: @font-normal;
-  font-size: 16px;
+  font-size: 14px;
   @media(min-width: @screen-sm){
     font-size: 18px;
   }
@@ -27,29 +27,42 @@ h1,h2,h3,h4,h5,.h1,.h2,.h3,.h4,.h5{
 
 
 .h1{
-  font-size:4em;
+  font-size:2em;
+  @media(min-width: @screen-md){
+    font-size:4em;
+  }
   line-height: 1.02em;
   letter-spacing: 0.075em;
 }
 .h2{
-  font-size: 3em;
+  font-size:1.5em;
+  @media(min-width: @screen-md){
+    font-size:3em;
+  }
   line-height: 1.08em;
   letter-spacing: 0.1em;
 }
 .h3{
-  font-size: 2em;
+  font-size:1.2em;
+  @media(min-width: @screen-md){
+    font-size:2em;
+  }
+
   line-height: 1.24em;
   letter-spacing: 0.125em;
 }
 .h4{
-  font-size: 1.5em;
+  font-size:1.2em;
+  @media(min-width: @screen-md){
+    font-size: 1.5em;
+  }
   line-height: 1.45em;
   letter-spacing: 0.15em;
 }
 .h5{
-  font-size: 1em;
   letter-spacing: 0.2em;
   line-height: 1.8em;
+  font-weight: bold;
 }
 
 p{
