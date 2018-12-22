@@ -8,23 +8,12 @@
 }
 [data-page-transition-state="start"]{
   #main-content{
-    animation-name: kf-to-left;
+    animation-name: kf-to-top;
   }
 }
 [data-page-transition-state="end"]{
   #main-content{
-    animation-name: kf-from-right;
-  }
-  h1,h2,h3{
-    &:after{
-      transform: scaleX(0);
-      transform-origin: left;
-      animation-name:kf-grow-x;
-      animation-delay: 0.2s;
-      animation-duration: 0.2s;
-      animation-fill-mode: forwards;
-      animation-timing-function: ease-out;
-    }
+    animation-name: kf-from-bottom;
   }
 }
 
@@ -46,21 +35,21 @@
     transform: translateX(0%);
   }
 }
-
-
-@keyframes kf-grow-x {
+@keyframes kf-to-top {
   0%{
-    transform: scaleX(0);
+    transform: translateY(0);
   }
   100%{
-    transform: scaleX(1);
+    transform: translateY(-10%);
+    opacity: 0;
   }
 }
-@keyframes kf-grow-x {
+@keyframes kf-from-bottom {
   0%{
-    transform: scaleX(0);
+    opacity: 0;
+    transform: translateY(10%);
   }
   100%{
-    transform: scaleX(1);
+    transform: translateY(0%);
   }
 }
