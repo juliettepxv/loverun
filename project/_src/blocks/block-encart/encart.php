@@ -10,9 +10,9 @@ $deco=$vv->getData("deco",null)?"deco":"";
         <div class="deco"></div>
     <?endif?>
 
-    <div class="container">
+    <div class="container <?=$cssBg?>">
 
-        <div class="encart <?=$cssBg?> <?=$style?>">
+        <div class="encart  <?=$style?>">
             <?=$vv->wysiwyg()
                 ->field("title_lang")
                 ->string()

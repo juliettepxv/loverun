@@ -4,13 +4,7 @@
  * @var Classiq\Models\JsonModels\ListItem $vv
  */
 ?>
-<label>Choissez un fichier</label>
-<?=$vv->wysiwyg()->field("targetUid")
-    ->file()
-    ->onSavedRefreshListItem($vv)
-    ->button()
-    ->render();
-?>
+
 
 <label>Style de titre</label>
 <?=$vv->wysiwyg()->field("style")
@@ -34,5 +28,29 @@
         ->input("text","Texte du lien")
 ?>
 <?endforeach;?>
+
+<label>Choissez une page</label>
+<?=$vv->wysiwyg()->field("page")
+    ->recordPicker("Page")
+    ->onSavedRefreshListItem($vv)
+    ->buttonRecord()
+    ->render()
+?>
+
+<label>Choissez un fichier</label>
+<?=$vv->wysiwyg()->field("file")
+    ->file()
+    ->onSavedRefreshListItem($vv)
+    ->button()
+    ->render();
+?>
+
+<label>Url</label>
+<?=$vv->wysiwyg()->field("url")
+        ->string()
+        ->onSavedRefreshListItem($vv)
+        ->isTranslated($lang)
+        ->input("url","http://")
+    ?>
 
 

@@ -37,7 +37,8 @@ class Site extends AbstractSingleton
         "blocks/block-cards/cards",
         "blocks/block-encart/encart",
         //"blocks/video",
-        "blocks/dwd"
+        "blocks/btn",
+        "blocks/separator"
     ];
 
     /**

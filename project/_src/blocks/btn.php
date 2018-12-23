@@ -1,27 +1,36 @@
 <?php
 /** @var Classiq\Models\JsonModels\ListItem $vv */
+
+use Classiq\Models\Page;
+
 /** @var \Classiq\Models\Filerecord $file */
-$file = $vv->targetUid(true);
-$url = "";
-$label = "";
+$file = $vv->getDataAsRecord("file");
+/** @var Page $page */
+$page = $vv->getDataAsRecord("page");
+$url = $vv->getData("url");
+$href = "";
+$label = $vv->getData("label_lang");
 $details = "";
+
 if ($file) {
-    $details = $file->humanFileSize() . " | " . $file->mime;
     $file = $file->localPath();
-    $label = $vv->getData("label_lang", basename($file));
-    $url = \Pov\Defaults\C_default::dwd_url($file);
-
+    $href = \Pov\Defaults\C_default::dwd_url($file);
 }
-
+if($page && $page->modelType()=="page"){
+    $href=$page->href();
+}
+if($url){
+    $href=$url;
+}
 ?>
 
 
-<? if (cq()->wysiwyg() || $url): ?>
-    <div <?= $vv->wysiwyg()->openConfigOnCreate()->attr() ?> class="block block-dwd">
+<? if (cq()->wysiwyg() || $href): ?>
+    <div <?= $vv->wysiwyg()->openConfigOnCreate()->attr() ?> class="block block-btn">
         <div class="container <?= $vv->getData("style", "normal") ?>">
-            <? if ($url): ?>
+            <? if ($href): ?>
 
-                <a href="<?= $url ?>" target="_blank" class="btn">
+                <a href="<?= $href ?>" target="_blank" class="btn">
                     <div>
                         <?= $label ?>
                         <?= file_get_contents("project/svg/arrow-right.svg") ?>
@@ -31,7 +40,7 @@ if ($file) {
                 <div id="cq-style">
                     <div class="machin">
                         <div text-center class="cq-box cq-th-danger">
-                            Il faut configurer ce téléchargement
+                            Il faut configurer un lien (<?=$href?>)
                         </div>
                     </div>
                 </div>
