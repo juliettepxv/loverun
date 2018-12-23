@@ -36,6 +36,7 @@ class Site extends AbstractSingleton
         "blocks/iframe",
         "blocks/block-cards/cards",
         "blocks/block-encart/encart",
+        "blocks/block-faq/faq",
         //"blocks/video",
         "blocks/btn",
         "blocks/separator"
