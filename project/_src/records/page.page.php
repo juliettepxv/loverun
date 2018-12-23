@@ -7,6 +7,7 @@ $view->inside("layout/layout",$vv);
 
         <?=$vv->wysiwyg()->field("blocks")
             ->listJson(site()->blocksList)
+            ->contextMenuSize(SIZE_SMALL)
             ->htmlTag()
             ->addClass("blocks");
         ?>

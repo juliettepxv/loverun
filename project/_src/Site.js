@@ -24,6 +24,7 @@ export default class Site{
         NavMenu.__init();
         require("./components/data-zoom-img");
         require("./components/data-is-lang");
+        require("./blocks/block-faq/faq");
         //require("./blocks/FormContact");
         //FormContact.initFromDom();
 

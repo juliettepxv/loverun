@@ -1,0 +1,70 @@
+.block.block-faq{
+  >.deco{
+    position: relative;
+    display: block;
+    background-image: url("../../../svg/petit-trait.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    background-position: center;
+    margin-bottom: -40px;
+    z-index: 1;
+  }
+
+  >.container{
+    position: relative;
+    >.encart{ //&.icones-texte,&.icones-image,&.colonnes
+      >h2{
+        .h2;
+        text-align: center;
+        padding: var(--spacing-medium);
+        padding-top: var(--spacing-big);
+        .bg-white;
+      }
+      >.list{
+        >.faq-item{
+          .bg-white;
+          margin-top: 1px;
+          >.title{
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            svg{
+              color: @color-pink;
+              transform-origin: center;
+              transition: all 0.2s;
+            }
+          }
+          >.txt{
+            .p;
+            max-height: 0;
+            overflow: hidden;
+            height: 0;
+            transition: all 0.2s;
+            text-align: left;
+            padding: 0;
+            padding-left: var(--spacing-medium);
+            padding-right: var(--spacing-medium);
+          }
+
+          &.open{
+            >.title{
+              svg{
+                transform: rotate(180deg);
+              }
+            }
+            >.txt{
+              max-height: 1000px;
+              height: auto;
+              padding: var(--spacing-medium);
+            }
+          }
+
+        }
+      }
+
+    }
+  }
+
+}
