@@ -1,40 +1,58 @@
-.btn, .btn-big{
+.btn {
   text-decoration: none;
   text-align: center;
   .h5;
   border-radius: 60px;
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  div{
+    display: flex;
+    align-items: center;
+
+  svg {
+    background-color: rgba(225, 255, 255, 0.25);
+    width: var(--spacing-big);
+    height: var(--spacing-big);
+    padding: 19px;
+    margin-left: var(--spacing-small);
+    border-radius: 100%;
+
+    display: none;
+  }
+  }
+
 }
 
-.btn{
+.btn {
   .py-small;
   .px-medium;
-}
-.btn-big{
-  .py-medium;
-  .px-big;
-  border: 3px solid @color-white;
+  .bg-white;
 }
 
-.bg-white{
-  .btn, .btn-big{
+.big {
+  .btn {
+
     .bg-gradient;
-    color:@color-white !important;
+    .pl-medium;
+    .pr-small;
+    border: 3px solid @color-white;
+    color: @color-white;
+    svg{
+      display: flex;
+    }
   }
 }
 
-.bg-gradient{
-  .btn, .btn-big{
-    .bg-white;
-  }
-}
-
-.bg-gradient-light{
-  .btn-big{
+.bg-white {
+  .btn {
     .bg-gradient;
-
+    color: @color-white !important;
   }
-  .btn{
+}
+
+.bg-gradient {
+  .btn {
     .bg-white;
   }
 }

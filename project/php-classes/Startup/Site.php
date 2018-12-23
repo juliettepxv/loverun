@@ -36,7 +36,7 @@ class Site extends AbstractSingleton
         "blocks/iframe",
         "blocks/block-cards/cards",
         //"blocks/video",
-        //"blocks/dwd"
+        "blocks/dwd"
     ];
 
     /**

@@ -56,7 +56,6 @@ $view->inside("layout/layout", $vv);
 
 
         <div class="bg-white pxy-big my-small">
-            <h5 class="py-small h4 pink">.h4.pink</h5>
             <a class="btn" href="#">
             .btn en savoir +
             </a>
@@ -65,9 +64,15 @@ $view->inside("layout/layout", $vv);
         <a class="btn mr-small" href="#">
             .btn en savoir +
         </a>
-        <a class="btn-big" href="#">
-            .btn-big en savoir +
+        <span class="big">
+            <a class="btn" href="#">
+                <div>
+                    .btn-big en savoir +
+                </div>
+
         </a>
+        </span>
+
         <div class=" py-big">
             <span class="my-big">
             <?= file_get_contents("project/svg/double-trait.svg") ?>
@@ -99,6 +104,14 @@ $view->inside("layout/layout", $vv);
 
     <div class="my-big" style="width: 300px;">
         <?= file_get_contents("project/svg/logo.svg") ?>
+    </div>
+
+
+
+    <div class="faq">
+        <div class="question">
+            A partir de quel âge pouvons-nous laisser notre enfant à la garderie ?
+        </div>
     </div>
 
 
