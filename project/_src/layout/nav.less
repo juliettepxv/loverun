@@ -45,7 +45,7 @@
     .menu{
       li{
         margin-bottom: 1px;
-        background-color: #fff;
+        .bg-white;
         display: block;
         &.is-btn{
           margin-bottom: 0px;
@@ -63,8 +63,7 @@
           display: block;
           text-align: center;
           &.h5{
-            color: @color-blue;
-            padding: var(--spacing-small);
+            padding: var(--spacing-small) var(--spacing-medium);
             &.active{
               color: #fff;
               .bg-gradient;
@@ -72,7 +71,7 @@
           }
           &.btn{
             .bg-gradient;
-            margin: var(--spacing-small);
+            margin: var(--spacing-small) var(--spacing-medium);
           }
         }
       }

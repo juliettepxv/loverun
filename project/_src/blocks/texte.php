@@ -12,7 +12,7 @@
                 ->string(\Pov\Utils\StringUtils::FORMAT_HTML)
                 ->setPlaceholder("Saisissez votre texte")
                 ->setMediumButtons([
-                    "h1","h2","h3",
+                    "h2","h3",
                     "bold","italic","underline","strikethrough",
                     "orderedlist","unorderedlist",
                     "anchor","select-record",
