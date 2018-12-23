@@ -36,6 +36,15 @@ $menu=\Classiq\Models\Nav::getByName("menu",true);
                 ->addClass("menu")
             ?>
 
+            <div class="social">
+                <a href="#">
+                    <?=pov()->svg->use("startup-social-facebook")?>
+                </a>
+                <a href="#">
+                    <?=pov()->svg->use("startup-social-instagram")?>
+                </a>
+            </div>
+
         </div>
 
     </div>
