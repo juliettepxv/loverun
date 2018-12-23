@@ -3,8 +3,17 @@
   .txt {
 
     //headings
-    h1,h2,h3,h4,h5{
-      margin-bottom: 0.5em;
+    h1,h2,h3,h4,h5, p{
+      //margin-bottom: 0.5em;
+      text-align: center;
+    }
+
+
+    h2{
+      .h1
+    }
+    h3{
+      .h4
     }
 
     //hrefs
@@ -39,6 +48,7 @@
     //listes
     ol,ul{
       list-style: none;
+      .p;
       li{
         display: flex;
         align-items: center;
@@ -53,6 +63,7 @@
         justify-content: center;
         margin-right: 1em;
         border-radius: 100%;
+        .h5;
       }
     }
     ul{
@@ -67,7 +78,7 @@
     ol {
       counter-reset: li;
       li::before{
-        font-size: 0.8em;
+        padding-left: 2px;
         content: counter(li);
         counter-increment: li;
         width: 2em;

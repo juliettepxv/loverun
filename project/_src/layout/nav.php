@@ -37,10 +37,10 @@ $menu=\Classiq\Models\Nav::getByName("menu",true);
             ?>
 
             <div class="social">
-                <a href="#">
+                <a href="https://www.facebook.com/loverun.official/" target="_blank">
                     <?=pov()->svg->use("startup-social-facebook")?>
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/loverunofficial/" target="_blank">
                     <?=pov()->svg->use("startup-social-instagram")?>
                 </a>
             </div>
