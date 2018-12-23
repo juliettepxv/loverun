@@ -11,8 +11,4 @@ $view->inside("layout/layout",$vv);
             ->addClass("blocks");
         ?>
 
-
-
-
-
 </div>
