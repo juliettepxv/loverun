@@ -1,0 +1,123 @@
+.block.block-encart{
+
+  h2{
+    text-align: center;
+    .h2;
+  }
+
+  .container{
+    position: relative;
+
+  }
+
+
+  .deco{
+      position: relative;
+      display: block;
+      background-image: url("../../../svg/petit-trait.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      height: 80px;
+      background-position: center;
+      margin-bottom: -20px;
+      z-index: 1;
+  }
+
+
+  .list{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    .encart-item{
+      padding: var(--spacing-small);
+    }
+  }
+
+  .encart{
+    padding-top: var(--spacing-big);
+    padding-bottom: var(--spacing-big);
+
+    &.icones-texte,&.icones-image{
+      .encart-item{
+        padding: var(--spacing-medium);
+        text-align: center;
+        width: 33%;
+        .title{
+          .h2;
+          margin-bottom: var(--spacing-small);
+        }
+        img{
+          width: 150px;
+          max-width: 100%;
+          height: auto;
+          margin-bottom: var(--spacing-small);
+        }
+        .txt{
+          .p;
+        }
+      }
+    }
+    &.icones-texte{
+      .encart-item{
+        width: 100%;
+        @media(min-width: @screen-lg){
+          width: 33%;
+        }
+        img{
+          display: none;
+        }
+      }
+    }
+    &.icones-image{
+      .encart-item{
+        width: 50%;
+        @media(min-width: @screen-lg){
+          width: 25%;
+        }
+
+        .title{
+          display: none;
+        }
+      }
+    }
+
+
+    &.colonnes{
+      .list{
+        flex-direction: column;
+        .encart-item{
+          display: flex;
+          flex-direction: row;
+          justify-content: space-between;
+          img{
+            display: none;
+          }
+          .title,.txt{
+            width: 40%;
+            .p;
+          }
+          .slash{
+            background-image: url("../../../svg/slash.svg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+            width: 20px;
+            height: 50px;
+          }
+          .title{
+            text-align: right;
+          }
+        }
+      }
+
+    }
+
+
+
+  }
+
+
+
+
+}
