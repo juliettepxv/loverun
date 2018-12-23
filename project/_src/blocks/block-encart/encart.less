@@ -1,40 +1,48 @@
 .block.block-encart{
 
-  h2{
-    text-align: center;
-    .h2;
-  }
-
-  .container{
+  >.deco{
     position: relative;
-
+    display: block;
+    background-image: url("../../../svg/petit-trait.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 80px;
+    background-position: center;
+    margin-bottom: -20px;
+    z-index: 1;
   }
 
-
-  .deco{
-      position: relative;
-      display: block;
-      background-image: url("../../../svg/petit-trait.svg");
-      background-size: contain;
-      background-repeat: no-repeat;
-      height: 80px;
-      background-position: center;
-      margin-bottom: -20px;
-      z-index: 1;
-  }
-
-
-  .list{
+  >.container{
     position: relative;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    .encart-item{
-      padding: var(--spacing-small);
+    >.encart{ //&.icones-texte,&.icones-image,&.colonnes
+      >h2{
+        .h2;
+        text-align: center;
+      }
+      >.list{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        >.encart-item{
+          padding: var(--spacing-small);
+          >img{}
+          >.slash{
+            background-image: url("../../../svg/slash.svg");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+          }
+          >.txt{
+            .p;
+          }
+        }
+      }
     }
   }
 
   .encart{
+
     padding-top: var(--spacing-big);
     padding-bottom: var(--spacing-big);
 
@@ -53,8 +61,9 @@
           height: auto;
           margin-bottom: var(--spacing-small);
         }
-        .txt{
-          .p;
+        .slash{
+          display: none;
+
         }
       }
     }
@@ -75,7 +84,6 @@
         @media(min-width: @screen-lg){
           width: 25%;
         }
-
         .title{
           display: none;
         }
@@ -98,10 +106,6 @@
             .p;
           }
           .slash{
-            background-image: url("../../../svg/slash.svg");
-            background-position: center;
-            background-size: contain;
-            background-repeat: no-repeat;
             width: 20px;
             height: 50px;
           }
@@ -110,11 +114,7 @@
           }
         }
       }
-
     }
-
-
-
   }
 
 
