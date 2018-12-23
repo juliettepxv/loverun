@@ -30,7 +30,7 @@ $menu=\Classiq\Models\Nav::getByName("menu",true);
             <?=$menu->wysiwyg()->field("items")
                 ->listJson(["layout/item"])
                 ->contextMenuSize(SIZE_SMALL)
-                ->contextMenuPosition(POSITION_TOP)
+                ->contextMenuPosition(POSITION_TOP_RIGHT)
                 ->onlyRecords("page")
                 ->htmlTag("ul")
                 ->addClass("menu")

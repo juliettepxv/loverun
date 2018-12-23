@@ -57,9 +57,9 @@ $view->inside("layout/layout", $vv);
 
         <div class="bg-white pxy-big my-small">
             <h5 class="py-small h4 pink">.h4.pink</h5>
-                <a class="btn" href="#">
-                .btn en savoir +
-                </a>
+            <a class="btn" href="#">
+            .btn en savoir +
+            </a>
         </div>
 
         <a class="btn mr-small" href="#">
