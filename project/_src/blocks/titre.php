@@ -6,13 +6,13 @@
  */
 ?>
 <div <?=$vv->wysiwyg()->attr()?> class="block block-titre py-medium">
-    <div class="container">
+    <div class="container <?=$vv->getData("style","normal")?>">
+
             <?=$vv->wysiwyg()
                 ->field("texte_lang")
                 ->string(\Pov\Utils\StringUtils::FORMAT_NO_HTML_SINGLE_LINE)
                 ->setPlaceholder("Saisissez votre titre")
-                ->htmlTag("h2")
-                ->addClass("tt-sous-titre")
+                ->htmlTag($vv->getData("balise","h2"))
             ?>
     </div>
 </div>
