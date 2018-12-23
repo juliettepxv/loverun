@@ -35,7 +35,7 @@ if($url){
             <?=$vv->wysiwyg()
                 ->field("txt_lang")
                 ->string(\Pov\Utils\StringUtils::FORMAT_HTML)
-                ->setMediumButtons(["h2","h3","removeFormat"])
+                ->setMediumButtons(["h2","h3","h4","removeFormat"])
                 ->htmlTag("div")
                 ->addClass("")
             ?>
