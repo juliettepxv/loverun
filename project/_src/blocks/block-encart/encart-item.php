@@ -30,7 +30,7 @@ if($img && $img->isImage()){
             ->addClass("")
         ?>
     </div>
-    <div class="slash"></div>
+    <?=pov()->svg->use("startup-slash")->addClass("slash");?>
     <div class="txt">
         <?=$vv->wysiwyg()
             ->field("txt_lang")

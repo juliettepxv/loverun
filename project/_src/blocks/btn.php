@@ -14,13 +14,15 @@ $details = "";
 
 if ($file) {
     $file = $file->localPath();
-    $href = \Pov\Defaults\C_default::dwd_url($file);
+    $url_file = \Pov\Defaults\C_default::dwd_url($file);
+    $href="href='$url_file' target='_self'";
 }
 if($page && $page->modelType()=="page"){
-    $href=$page->href();
+    $url_page=$page->href();
+    $href="href='$url_page' target='_self'";
 }
 if($url){
-    $href=$url;
+    $href="href='$url' target='_blank'";
 }
 ?>
 
@@ -30,10 +32,10 @@ if($url){
         <div class="container <?= $vv->getData("style", "normal") ?>">
             <? if ($href): ?>
 
-                <a href="<?= $href ?>" target="_blank" class="btn">
+                <a <?= $href ?> class="btn">
                     <div>
                         <?= $label ?>
-                        <?= file_get_contents("project/svg/arrow-right.svg") ?>
+                        <?= pov()->svg->use("startup-arrow-right") ?>
                     </div>
                 </a>
             <? else: ?>

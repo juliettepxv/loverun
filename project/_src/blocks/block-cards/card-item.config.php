@@ -16,6 +16,14 @@
     ->button()
     ->render()
 ?>
+
+<label>Choissez une page</label>
+<?=$vv->wysiwyg()->field("page")
+    ->recordPicker("Page")
+    ->onSavedRefreshListItem($vv)
+    ->buttonRecord()
+    ->render()
+?>
 <label>Lien</label>
 <?=$vv->wysiwyg()->field("url")
     ->string()
@@ -23,6 +31,7 @@
     ->input()
 
 ?>
+
 
 
 

@@ -20,11 +20,19 @@ if($img && $img->isImage()){
 
 $tag="div";
 $href="";
-
 $url=$vv->getData("url");
+/** @var Page $page */
+$page = $vv->getDataAsRecord("page");
 if($url){
     $tag="a";
     $href="href='$url' target='_blank'";
+}
+
+if($page && $page->modelType()=="page"){
+    $tag="a";
+    $url_page=$page->href();
+    $href="href='$url_page' target='_self'";
+
 }
 
 ?>
