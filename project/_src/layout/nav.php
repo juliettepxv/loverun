@@ -2,38 +2,41 @@
 /** @var \Classiq\Models\Nav $menu */
 $menu=\Classiq\Models\Nav::getByName("menu",true);
 ?>
-<nav id="nav" class="shadow-medium">
-    <div id="nav-mask" data-nav-menu-toggle></div>
+<nav id="nav">
+    <div id="nav-mask" class="visible-nav-open" data-nav-menu-toggle></div>
 
     <div id="nav-bar" >
 
-        <a class="logo bgimg-cover"
-           style="background-image: url('<?=the()->fileSystem->filesystemToHttp("project/logo.png")?>')"
-           href="<?=cq()->homePage()->href()?>"></a>
+        <a class="logo" href="<?=cq()->homePage()->href()?>">
+            <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo.svg")?>">
+        </a>
 
-        <button data-nav-menu-toggle class="burger d-flex d-xl-none unstyled">
-            <?=pov()->svg->use("startup-burger")?>
-            <?=pov()->svg->use("startup-close")?>
+        <button data-nav-menu-toggle class="burger d-flex unstyled">
+            <?=pov()->svg->use("startup-burger")->addClass("visible-nav-closed")?>
+            <?=pov()->svg->use("startup-close")->addClass("visible-nav-open")?>
         </button>
 
     </div>
 
     <div id="nav-content">
 
-        <?=$menu->wysiwyg()->field("items")
-            ->listJson(["layout/item"])
-            ->horizontal()
-            ->contextMenuSize(SIZE_SMALL)
-            ->contextMenuPosition(POSITION_TOP)
-            ->onlyRecords("page")
-            ->htmlTag("ul")
-            ->addClass("menu")
-        ?>
+        <div class="menu-wrap">
 
-        <ul class="right">
-            <?=$view->render("./menu-languages")?>
 
-        </ul>
+            <a class="logo" href="<?=cq()->homePage()->href()?>">
+                <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo.svg")?>">
+            </a>
+
+            <?=$menu->wysiwyg()->field("items")
+                ->listJson(["layout/item"])
+                ->contextMenuSize(SIZE_SMALL)
+                ->contextMenuPosition(POSITION_TOP)
+                ->onlyRecords("page")
+                ->htmlTag("ul")
+                ->addClass("menu")
+            ?>
+
+        </div>
 
     </div>
 </nav>

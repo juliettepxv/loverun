@@ -17,4 +17,13 @@
         <?endforeach;?>
         <dfn>Si vous souhaitez afficher un texte différent sur le lien</dfn>
     </fieldset>
+
+    <fieldset>
+        <?=$vv->wysiwyg()->field("styleButton")
+        ->bool()
+            ->onSavedRefreshListItem($vv)
+            ->checkbox("Afficher sous forme de bouton")
+        ?>
+    </fieldset>
+
 </div>

@@ -1,37 +1,52 @@
+//à partir de quant on affiche la nav tout le temps
+@breakPoint:@screen-lg;
+@breakPointMax:@screen-md-max;
+
 
 #root{
-  --nav-menu-width:300px;
-  --nav-bar-height:50px;
+  --nav-menu-width:100vw;
+  @media(min-width: @screen-sm){
+    --nav-menu-width:300px;
+  }
   @media(min-width: @screen-md){
     --nav-menu-width:400px;
-    --nav-bar-height:80px;
   }
   //à partir de là on est plus en burger
   @media(min-width: @screen-lg){
     //--menu-width:400px; plus d'intérêt
-    --nav-bar-height:100px;
   }
 }
 
+
+
+
+
 html{
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 #root{
-  padding-top: var(--nav-bar-height,80px);
-
+  .bg-gradient-light;
   >#main{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: calc(100vh - var(--nav-bar-height,"80px"));
-    >#main-content{
 
+    >#main-content{
+      min-height: calc(100vh);
     }
     >footer{
       width: 100%;
       min-height: 50px;
     }
+
+    >#main-content,>footer{
+      @media(min-width: @breakPoint){
+        padding-left: var(--nav-menu-width);
+      }
+    }
   }
+
 }
 @import "nav.less";
 @import "footer.less";
