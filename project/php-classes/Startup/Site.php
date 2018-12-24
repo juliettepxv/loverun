@@ -39,7 +39,8 @@ class Site extends AbstractSingleton
         "blocks/block-faq/faq",
         //"blocks/video",
         "blocks/btn",
-        "blocks/separator"
+        "blocks/separator",
+        "blocks/count-down"
     ];
 
     /**

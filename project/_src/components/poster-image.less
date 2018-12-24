@@ -1,0 +1,11 @@
+.poster-image{
+  width: 100vw;
+  height: calc( 100vmin / 16 * 9);
+  max-height: 400px;
+  @media(min-width: @breakPoint){
+    margin-left: calc( var(--nav-menu-width) * -1 ) ;
+  }
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

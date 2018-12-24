@@ -13,7 +13,7 @@ if($style=="pill"){
 ?>
 <div <?=$vv->wysiwyg()->attr()?> class="block block-titre py-medium">
     <?if($image):?>
-    <div class="img" style="background-image: url('<?=$image->image()->sizeMax(1600,1600)->jpg()->href()?>')"></div>
+    <div class="poster-image" style="background-image: url('<?=$image->image()->sizeMax(1600,1600)->jpg()->href()?>')"></div>
     <?endif?>
     <div class="container <?=$vv->getData("style","normal")?>">
 
