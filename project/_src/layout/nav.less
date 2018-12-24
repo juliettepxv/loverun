@@ -15,10 +15,15 @@
   align-items: center;
   justify-content: center;
   width: var(--nav-menu-width);
-  height: 100vh;
-
+  min-height: 100vh;
+  padding-top: var(--spacing-medium);
+  padding-bottom: var(--spacing-medium);
   .menu-wrap{
-
+    /*
+    overflow-y: hidden;
+    overflow-x: hidden;
+    max-height: 100%;
+    */
     .logo{
       display: block;
       position: relative;
@@ -74,6 +79,28 @@
             margin: var(--spacing-small) var(--spacing-medium);
           }
         }
+
+        //sous menu
+        ul.children{
+          //ouverture fermeture
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.15s ease-out;
+          &.open{
+            max-height: 500px;
+            transition: max-height 0.25s ease-in;
+          }
+          li{
+            background-color: @color-orange-pastel;
+            >a{
+              &.active{
+                background: none;
+                color: @color-pink;
+              }
+            }
+          }
+        }
+
       }
     }
 

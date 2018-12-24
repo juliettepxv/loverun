@@ -55,6 +55,11 @@ export default class Site{
 
         });
 
+        $body.on("click","[data-href-uid][href='#']",function(e){
+            $
+           $(this).closest("li").find(".children").toggleClass("open")
+        });
+
         STAGE.on(EVENTS.RESIZE,function(){
             me.resizeStage();
         });
@@ -68,8 +73,17 @@ export default class Site{
      * Selectionne / déselectionne l'item de nav de la page en cours
      */
     static navActive(){
+        //ferme tout
         $("[data-href-uid]").removeClass("active");
-        $("[data-href-uid='"+PovHistory.currentPageInfo.uid+"']").addClass("active");
+        $("[data-href-uid]").closest("li").find(".children").removeClass("open");
+
+        let $actives=$("[data-href-uid='"+PovHistory.currentPageInfo.uid+"']");
+        $actives.addClass("active");
+        $actives.closest("li").find(".children").addClass("open");
+
+        $actives.closest(".children").closest("li").find(">a[data-href-uid]").addClass("active"); // selection le parent aussi
+        $actives.closest(".children").addClass("open");
+
     }
 
     /**

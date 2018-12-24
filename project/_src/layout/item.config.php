@@ -5,6 +5,17 @@
  */
 ?>
 <div id="wysiwyg" <?=$view->attrRefresh($vv->uid())?>>
+
+    <fieldset>
+        <label>Page</label>
+        <?=$vv->wysiwyg()->field("targetUid")
+            ->recordPicker("page",false)
+            ->onSavedRefreshListItem($vv)
+            ->buttonRecord()
+            ->render()
+        ?>
+    </fieldset>
+
     <fieldset>
         <label>Texte du lien</label>
         <?foreach (the()->project->languages as $lang):?>
@@ -23,6 +34,16 @@
         ->bool()
             ->onSavedRefreshListItem($vv)
             ->checkbox("Afficher sous forme de bouton")
+        ?>
+    </fieldset>
+
+    <fieldset>
+        <label>Sous rubriques</label>
+        <?=$vv->wysiwyg()->field("children")
+            ->recordPicker("page",true)
+            ->onSavedRefreshListItem($vv)
+            ->buttonRecord()
+            ->render()
         ?>
     </fieldset>
 
