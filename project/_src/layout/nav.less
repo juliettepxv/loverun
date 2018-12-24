@@ -12,13 +12,28 @@
 #nav-content{
 
   display: flex;
-  align-items: center;
+  //align-items: center;
   justify-content: center;
   width: var(--nav-menu-width);
-  min-height: 100vh;
+  height: 100vh;
   padding-top: var(--spacing-medium);
   padding-bottom: var(--spacing-medium);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    //display: none;
+    width: 8px;
+    background-color: transparent;
+
+  }
+  &::-webkit-scrollbar-thumb {
+    background: @color-pink;
+    border-radius: 10px;
+  }
+
   .menu-wrap{
+    margin-top: auto;
+    margin-bottom: auto;
     /*
     overflow-y: hidden;
     overflow-x: hidden;
