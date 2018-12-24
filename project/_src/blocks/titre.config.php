@@ -18,6 +18,20 @@
     ])
 
 ?>
+<?if($vv->getData("style")=="pill"):?>
+    <label>Vous souhaitez intégrer une image de fond?</label>
+    <?=$vv->wysiwyg()->field("image")
+        ->file()
+        ->setMimeAcceptImagesOnly()
+        ->onSavedRefreshListItem($vv)
+        ->button()
+        ->render()
+
+    ?>
+<?endif?>
+
+
+
 <label>SEO</label>
 <?=$vv->wysiwyg()->field("balise")
     ->string()
@@ -28,6 +42,7 @@
     ])
 
 ?>
+
 
 
 
