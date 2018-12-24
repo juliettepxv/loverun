@@ -85,13 +85,19 @@
           &.h5{
             padding: var(--spacing-small) var(--spacing-medium);
             &.active{
-              color: #fff;
+              color: #fff !important;
               .bg-gradient;
+            }
+            &:hover{
+              color: @color-pink;
             }
           }
           &.btn{
             .bg-gradient;
             margin: var(--spacing-small) var(--spacing-medium);
+            &:hover{
+              color: @color-white;
+            }
           }
         }
 
@@ -110,7 +116,7 @@
             >a{
               &.active{
                 background: none;
-                color: @color-pink;
+                color: @color-pink !important;
               }
             }
           }
