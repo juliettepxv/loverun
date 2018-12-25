@@ -1,3 +1,5 @@
+import CountDown from "./blocks/CountDown";
+
 export default class Site{
     constructor() {
         /**
@@ -53,10 +55,14 @@ export default class Site{
                 gtag('config', LayoutVars.googleAnalyticsId, {'page_path': location.pathname});
             }
 
+            CountDown.initFromDom();
+
+
         });
 
+        CountDown.initFromDom();
+
         $body.on("click","[data-href-uid][href='#']",function(e){
-            $
            $(this).closest("li").find(".children").toggleClass("open")
         });
 

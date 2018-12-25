@@ -21,21 +21,23 @@ $image=$vv->getDataAsRecord("image");
                 ->htmlTag($vv->getData("balise","h1"))
             ?>
 
-            <div class="compteur">
+            <div class="compteur"
+                 data-count-down data-date-start="<?=pov()->utils->date->timestamp()?>"
+                 data-date-end="<?=DateTime::createFromFormat("Y-m-d H:i:s","2019-05-12 14:00:00")->getTimestamp()?>">
                 <div>
-                    <span>150</span>
+                    <span class="days">00</span>
                     <i>Jours</i>
                 </div>
                 <div>
-                    <span>12</span>
+                    <span class="hours">00</span>
                     <i>Heures</i>
                 </div>
                 <div>
-                    <span>30</span>
+                    <span class="minutes">00</span>
                     <i>Minutes</i>
                 </div>
                 <div>
-                    <span>22</span>
+                    <span class="seconds">00</span>
                     <i>Secondes</i>
                 </div>
             </div>
