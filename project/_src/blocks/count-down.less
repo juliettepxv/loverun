@@ -28,9 +28,17 @@
     h1{
       max-width: 80%;
       .h1;
+      margin-bottom:var(--spacing-medium);
     }
 
+
     .compteur{
+      user-select: none;
+      opacity:0;
+      transition: opacity 0.5s;
+      &.init{
+        opacity: 1;
+      }
       margin-top: var(--spacing-medium);
       .bg-gradient;
       border-radius: 100px;
@@ -68,7 +76,6 @@
           }
         }
 
-
         >*{
           display: block;
           text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
@@ -84,6 +91,7 @@
         }
       }
     }
+
 
   }
 

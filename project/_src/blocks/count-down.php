@@ -21,6 +21,8 @@ $image=$vv->getDataAsRecord("image");
                 ->htmlTag($vv->getData("balise","h1"))
             ?>
 
+            <div class="h5">DANS : </div>
+
             <div class="compteur"
                  data-count-down data-date-start="<?=pov()->utils->date->timestamp()?>"
                  data-date-end="<?=DateTime::createFromFormat("Y-m-d H:i:s","2019-05-12 14:00:00")->getTimestamp()?>">

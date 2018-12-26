@@ -19,9 +19,7 @@ export default class Site{
      * @private
      */
     _initListeners() {
-
         let me=this;
-
         require("./layout/NavMenu");
         NavMenu.__init();
         require("./components/data-zoom-img");
@@ -103,6 +101,6 @@ export default class Site{
      * Initialisations d'objets dom
      */
     onDomChange(){
-        //ou pas :)
+        CountDown.initFromDom();
     }
 }
