@@ -34,25 +34,44 @@
       margin-top: var(--spacing-medium);
       .bg-gradient;
       border-radius: 100px;
-      border: 1px solid #fff;
+      border: 2px solid #fff;
       display: flex;
       >div{
         text-align: center;
-        border-right: 1px solid #fff;
-        padding: var(--spacing-small) var(--spacing-medium);
-        min-width: 70px;
-        @media(min-width: @screen-md){
-          min-width: 150px;
-        }
-
+        border-right: 2px solid #fff;
+        padding: var(--spacing-small) var(--spacing-small);
         flex-shrink: 0;
         flex-grow: 1;
+        min-width: 40px;
+        @media(min-width: @screen-md){
+          min-width: 120px;
+        }
+        &:first-child{
+          padding-left: var(--spacing-medium);
+        }
         &:last-child{
           border-right: none;
+          padding-right: var(--spacing-medium);
         }
+        &:first-child,&:last-child{
+          min-width: 60px;
+          @media(min-width: @screen-md){
+            min-width: 150px;
+          }
+        }
+        @media(min-width: @screen-md){
+          &:first-child{
+            padding-left: var(--spacing-medium);
+          }
+          &:last-child{
+            padding-right: var(--spacing-medium);
+          }
+        }
+
+
         >*{
           display: block;
-
+          text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
         }
         >span{
           .h2;
@@ -61,6 +80,7 @@
           text-transform: none;
           font-style: normal;
           font-size: 0.8em;
+          font-weight: lighter;
         }
       }
     }
