@@ -17,7 +17,7 @@
     ->select([
             "Icones texte"=>"icones-texte",
             "Icones images"=>"icones-image",
-            "Colonnes"=>"colonnes",
+            "Colonnes"=>"colonnes"
     ])
 ?>
 <label>Couleur</label>

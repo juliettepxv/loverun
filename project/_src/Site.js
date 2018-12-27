@@ -102,14 +102,22 @@ export default class Site{
      */
     onDomChange(){
         CountDown.initFromDom();
-        /*
-        $(".encart.carousel .list").slick(
-            {
+        //return;
+        if(!LayoutVars.wysiwyg){
+            $(".block-carousel .carousel").not(".slick-initialized").each(function(){
+                $(this).slick(
+                    {
+                        infinite: true,
+                        dots:true,
+                        slidesToShow: 1,
+                        adaptiveHeight: true,
+                        autoplay:true,
+                        arrows:false
+                    }
+                )
+            });
+        }
 
-                // normal options...
-                infinite: true,
-            }
-        );
-        */
+
     }
 }

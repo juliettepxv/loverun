@@ -1,0 +1,68 @@
+.block.block-carousel{
+  .carousel{
+    .item{
+      display: flex;
+      .img{
+        width: 300px;
+        height: 300px;
+        background-size: cover;
+        background-position: center;
+        flex-shrink: 0;
+      }
+      .txt{
+        flex-grow: 1;
+        //outline: 1px solid red;
+        min-height: 300px;
+        padding: var(--spacing-big);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        .btn{
+          align-self: flex-end;
+          justify-self: flex-end;
+          margin-right: 0;
+          margin-left: auto;
+        }
+
+        .text{
+          h2{
+            .h2;
+          }
+          h3{
+            .h3;
+            color:@color-pink;
+          }
+          h4{
+            .h3;
+          }
+        }
+
+      }
+    }
+
+    .slick-dots{
+      position: absolute;
+      top: -40px;
+      right: 0;
+      display: flex;
+      width: auto;
+      >li{
+        @s:15px;
+        background-color: #fff;
+        border:2px solid #fff;
+        width: @s;
+        height: @s;
+        border-radius: 100%;
+        &.slick-active{
+          background-color: @color-pink;
+        }
+        button{
+          &:before{
+            content: "";
+          }
+        }
+      }
+    }
+
+  }
+}

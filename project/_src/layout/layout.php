@@ -34,6 +34,7 @@ if(!the()->requestUrl->isAjax){
         the()->htmlLayout()->install()->googleMap(site()->googleApiKey,"places");
     }
     the()->htmlLayout()->layoutVars->googleAnalyticsId=site()->googleAnalyticsId;
+    the()->htmlLayout()->layoutVars->wysiwyg=cq()->wysiwyg();
     the()->htmlLayout()->hreflang=the()->project->langCode;
     the()->htmlLayout()->favicon->favicon=the()->fileSystem->filesystemToHttp("project/logos/128-128.png");
     the()->htmlLayout()->addJavascriptTranslations();
