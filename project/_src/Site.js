@@ -102,5 +102,14 @@ export default class Site{
      */
     onDomChange(){
         CountDown.initFromDom();
+        /*
+        $(".encart.carousel .list").slick(
+            {
+
+                // normal options...
+                infinite: true,
+            }
+        );
+        */
     }
 }

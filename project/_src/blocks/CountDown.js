@@ -9,12 +9,22 @@ export default class CountDown{
         let $seconds=$main.find(".seconds");
         let startTime=new Date().getTime();
 
+        function refresh(){
+            console.log("recharge count down");
+            startTime=new Date().getTime();//pour éviter de re refresh
+            $main.closest("[data-pov-v-path]").povRefresh();
+            //$main.css("opacity","0.2");
+        }
+
+        $(window).on("focus",function(){
+            console.log("focus");
+            refresh();
+        });
+
         function loop(){
             //si tourne dpuis trop lontemps recharge le block (3 minutes)
             if( new Date().getTime() - startTime > 1000 * 60 * 3){
-                startTime=new Date().getTime();//pour éviter de re refresh
-                $main.closest("[data-pov-v-path]").povRefresh();
-                //$main.css("opacity","0.2");
+                refresh();
             }
             debut+=1000;
 

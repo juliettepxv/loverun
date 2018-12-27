@@ -8,7 +8,7 @@
 $image=$vv->getDataAsRecord("image");
 
 ?>
-<div <?=$vv->wysiwyg()->attr()?> class="block block-count-down">
+<div <?=$vv->wysiwyg()->attr()?> <?=$view->attrRefresh($vv->uid())?> class="block block-count-down">
     <?if($image):?>
     <div class="poster-image" style="background-image: url('<?=$image->image()->sizeMax(1600,1600)->jpg()->href()?>')"></div>
     <?endif?>
