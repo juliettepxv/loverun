@@ -2,6 +2,7 @@
   .carousel{
     .item{
       display: flex;
+
       .img{
         width: 300px;
         height: 300px;
@@ -14,6 +15,7 @@
         //outline: 1px solid red;
         min-height: 300px;
         padding: var(--spacing-big);
+        padding-bottom: var(--spacing-medium);
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -38,7 +40,28 @@
         }
 
       }
+
+
+      @media(max-width: @screen-lg-max){
+        flex-direction: column;
+        .img{
+          width: 100%;
+          height: 200px;
+        }
+        .txt{
+          min-height: 250px;
+          height: auto;
+          .btn{
+            margin-top: var(--spacing-small);
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      }
+
     }
+
+
 
     .slick-dots{
       position: absolute;
