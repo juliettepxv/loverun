@@ -6,7 +6,7 @@ use Classiq\Models\Page;
 $view->inside("layout/layout", $vv);
 ?>
 
-<div class="container pb-big">
+<div class=" pb-big">
 
 
     <?=$vv->wysiwyg()->field("blocks")
@@ -17,7 +17,7 @@ $view->inside("layout/layout", $vv);
     ?>
 
     <?/*
-    <div id="tests a virer">
+    <div class="container" id="tests a virer">
         <br>
         <br>
         <BR>
