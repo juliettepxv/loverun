@@ -11,6 +11,19 @@
 }
 #nav-content{
 
+  @media(min-width: @screen-lg) and (max-height: 930px){
+    --spacing-small:12px;
+    --spacing-medium:20px;
+  }
+  @media(min-width: @screen-lg) and (max-height: 800px){
+    --spacing-small:10px;
+    --spacing-medium:15px;
+  }
+  @media(min-width: @screen-lg) and (max-height: 710px){
+    --spacing-small:8px;
+    --spacing-medium:10px;
+  }
+
   display: flex;
   //align-items: center;
   justify-content: center;
@@ -43,7 +56,12 @@
       display: block;
       position: relative;
       width: 100%;
-      height: 200px;
+
+      height: calc( var(--spacing-small)  * 10 );
+      >img{
+        right: calc( -1 * var(--spacing-small) );
+      }
+
       &:before{
         content: "";
         background-color: #fff;
@@ -56,7 +74,6 @@
       >img{
         position: absolute;
         bottom: 8%;
-        right: -30px;
         width: 90%;
         max-height: 92%;
       }
@@ -101,6 +118,8 @@
           }
         }
 
+
+
         //sous menu
         ul.children{
           //ouverture fermeture
@@ -131,6 +150,7 @@
       justify-content: center;
       align-items: center;
       padding: var(--spacing-medium);
+
       color: @color-blue;
       >a{
         width: 32px;
@@ -141,6 +161,7 @@
           height: 100%;
         }
       }
+
     }
 
   }
@@ -170,7 +191,7 @@
       width: 100px;
     }
     .burger{
-      color: @color-blue;
+      color: @color-pink;
       z-index: 1000000000;
       position: absolute;
       left: 0;

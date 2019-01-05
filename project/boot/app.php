@@ -24,6 +24,8 @@ if(the()->human->isAdmin){
     //\Classiq\Wysiwyg\WysiwygConfig::inst()->recordsWeCanSelect=["Page","Monmodelecustom"]; 
 }
 
+the()->version(date("YmdHis"));
+
 //seo
 //\Classiq\Seo\C_sitemap_xml::$modelTypesToIndex=["page","modeleetc"];
 
