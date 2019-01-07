@@ -5,6 +5,14 @@
  *
  */
 ?>
+<label>Choisir une image</label>
+<?= $vv->wysiwyg()->field("targetUid")
+    ->file()
+    ->setMimeAcceptImagesOnly()
+    ->onSavedRefreshListItem($vv)
+    ->button()
+    ->render();
+?>
 <label>Activer le zoom?</label>
 <?=$vv->wysiwyg()
     ->field("zoom")
