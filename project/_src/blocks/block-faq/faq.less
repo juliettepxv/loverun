@@ -7,7 +7,8 @@
     background-repeat: no-repeat;
     height: 80px;
     background-position: center;
-    margin-bottom: -40px;
+    margin-left: 30px;
+    margin-bottom: -20px;
     z-index: 1;
   }
 
@@ -24,14 +25,21 @@
       >.list{
         >.faq-item{
           .bg-white;
-          margin-top: 1px;
+          border-bottom: 1px solid @color-orange-pastel;
           >.title{
             cursor: pointer;
             display: flex;
             justify-content: space-between;
             align-items: center;
             padding: var(--spacing-small) var(--spacing-medium);
+
+            .h5{
+              text-align: left;
+              padding-right: var(--spacing-small) ;
+            }
+
             svg{
+              flex-shrink: 0;
               width: 20px;
               height: 20px;
               color: @color-pink;

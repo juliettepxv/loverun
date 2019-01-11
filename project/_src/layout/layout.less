@@ -4,25 +4,32 @@
 
 
 #root{
+
+
+  --nav-bar-height : 75px;
+
+  @media(min-width: @breakPoint){
+    --nav-bar-height: 0.1px;
+  }
+
   --nav-menu-width:100vw;
   @media(min-width: @screen-sm){
-    --nav-menu-width:300px;
+    --nav-menu-width:252px;
   }
   @media(min-width: @screen-md){
-    --nav-menu-width:400px;
+    --nav-menu-width:252px;
   }
   //à partir de là on est plus en burger
-  @media(min-width: @screen-lg){
-    //--menu-width:400px; plus d'intérêt
+  @media(min-width: @screen-xl){
+    --nav-menu-width:305px;
   }
 }
 
 @media(min-width: @screen-lg){
-  .container{
+ .container{
     max-width: 1100px;
   }
 }
-
 
 
 
@@ -43,8 +50,8 @@ html{
 
     >#main-content{
       min-height: calc(100vh);
-      @media(max-width: @breakPoint){
-        padding-top: 50px;
+      @media(max-width: @breakPointMax){
+        padding-top: var(--nav-bar-height);
       }
     }
     >footer{
@@ -56,6 +63,7 @@ html{
     >#main-content,>footer{
       @media(min-width: @breakPoint){
         padding-left: var(--nav-menu-width);
+        padding-right:var(--spacing-medium);
       }
     }
   }

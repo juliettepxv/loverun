@@ -34,7 +34,8 @@ if($img && $img->isImage()){
     <div class="txt">
         <?=$vv->wysiwyg()
             ->field("txt_lang")
-            ->string(\Pov\Utils\StringUtils::FORMAT_NO_HTML_MULTI_LINE)
+            ->string(\Pov\Utils\StringUtils::FORMAT_HTML)
+            ->setMediumButtons(["anchor","removeFormat"])
             ->setPlaceholder("texte")
             ->htmlTag("div")
             ->addClass("")

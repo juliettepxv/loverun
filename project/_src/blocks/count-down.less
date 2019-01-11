@@ -1,18 +1,28 @@
 .block-count-down{
 
-  height: 75vmin;
+
+  --border-size :3px;
+
+  height: calc( 100vh - var(--nav-bar-height) );
   min-height: 400px;
   margin-bottom: calc( var(--spacing-big) *2 );
 
   text-align: center;
   position: relative;
 
+  --spacing-countdown : var(--spacing-small);
+  --spacing-countdown-ext : var(--spacing-medium);
+  @media (min-width: @breakPoint) {
+    --spacing-countdown: var(--spacing-medium);
+    --spacing-countdown-ext: var(--spacing-big);
+  }
 
   .poster-image{
     position: absolute;
     height: 100%;
     min-height: 100%;
     margin-bottom: calc( var(--spacing-big) * -2 );
+    max-height: 100%;
   }
 
   .container{
@@ -42,12 +52,13 @@
       margin-top: var(--spacing-medium);
       .bg-gradient;
       border-radius: 100px;
-      border: 2px solid #fff;
+      border:  var(--border-size) solid #fff;
       display: flex;
       >div{
         text-align: center;
-        border-right: 2px solid #fff;
-        padding: var(--spacing-small) var(--spacing-small);
+        border-right: var(--border-size) solid #fff;
+
+        padding: var(--spacing-countdown) var(--spacing-countdown);
         flex-shrink: 0;
         flex-grow: 1;
         min-width: 40px;
@@ -55,11 +66,11 @@
           min-width: 120px;
         }
         &:first-child{
-          padding-left: var(--spacing-medium);
+          padding-left: var(--spacing-countdown-ext);
         }
         &:last-child{
           border-right: none;
-          padding-right: var(--spacing-medium);
+          padding-right: var(--spacing-countdown-ext);
         }
         &:first-child,&:last-child{
           min-width: 60px;
@@ -69,16 +80,19 @@
         }
         @media(min-width: @screen-md){
           &:first-child{
-            padding-left: var(--spacing-medium);
+            padding-left: var(--spacing-countdown-ext);
           }
           &:last-child{
-            padding-right: var(--spacing-medium);
+            padding-right: var(--spacing-countdown-ext);
           }
         }
 
         >*{
           display: block;
-          text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+          text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.25);
+          p{
+            text-shadow: none;
+          }
         }
         >span{
           .h2;
@@ -89,6 +103,17 @@
           font-size: 0.8em;
           font-weight: lighter;
         }
+      }
+    }
+
+    .scroll-txt{
+      margin-top: var(--spacing-big);
+      .p{
+        margin-bottom: var(--spacing-small);
+      }
+      svg{
+        width: 24px;
+        height: 24px;
       }
     }
 

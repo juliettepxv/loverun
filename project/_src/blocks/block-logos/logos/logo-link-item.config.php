@@ -22,6 +22,18 @@
     ->input("url")
 ?>
 
+
+<label>Taille</label>
+<?=$vv->wysiwyg()->field("size")
+    ->string()
+    ->onSavedRefreshListItem($vv)
+    ->setDefaultValue("small")
+    ->select([
+        "Petit"=>"small",
+        "Grand"=>"big"
+    ]);
+?>
+
 <?/*
 <label>Ou téléchargement...</label>
 <?=$vv->wysiwyg()->field("fichier")

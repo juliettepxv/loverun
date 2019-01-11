@@ -1,6 +1,8 @@
 .block.block-cards{
 
   .row{
+
+    justify-content: center;
     >.card-item{
       margin-top: var(--spacing-medium);
       .card{
@@ -41,12 +43,13 @@
             height: 100px;
           }
           .img{
-            width: 100px;
-            height: 100px;
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
           }
           .txt{
-            text-align: left;
-            min-height: 100px;
+            min-height: 150px;
+            width: 100%;
           }
         }
       }

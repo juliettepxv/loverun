@@ -1,13 +1,13 @@
 <?php
 the()->fmkHttpRoot="";// /github/classiq-startup
-the()->configProjectUrl=new \Pov\Configs\ProjectUrl("love-run.pixelvinaigrette.com"); // localhost/github/classiq-startup/fr
+the()->configProjectUrl=new \Pov\Configs\ProjectUrl("love-run.com"); // localhost/github/classiq-startup/fr
 the()->fileSystem=new \Pov\Configs\FileSystem("project");
 the()->configProjectUrl->seoActive=true;
 the()->boot->loadProject("project");
 the()->project->langCode="fr";
-the()->project->languages=["fr","en"];
+the()->project->languages=["fr"];
 the()->project->languagesUrls=[
-    "fr"=>"love-run.pixelvinaigrette",
+    "fr"=>"love-run.com",
 ];
 //force https?
 the()->configProjectUrl->forceHttps=true;

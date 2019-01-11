@@ -5,17 +5,18 @@ $imgTag="";
 /** @var \Classiq\Models\Filerecord $img */
 $img=$vv->targetUid(true);
 if($img && $img->isImage()){
-    $imgTag=$img->image() ->sizeMax(150,150)->png()->htmlTag();
+    $imgTag=$img->image() ->sizeMax(200,200)->png()->htmlTag();
 }else{
     $imgTag=pov()
         ->img("")
         ->bgColor("EEEEEE")
         ->displayIfEmpty(true)
-        ->sizeMax(150,150)
+        ->sizeMax(200,200)
         ->png()->htmlTag();
 }
 
 $href=$vv->getData("href");
+$size= $vv->getData("size","small");
 
 
 /** @var \Classiq\Models\Filerecord $fichier */
@@ -28,8 +29,8 @@ if($fichier){
 
 ?>
 <?if($href):?>
-    <a class="item" <?=$vv->wysiwyg()->attr()?> href="<?=$href?>" target="_blank"> <?=$imgTag?> </a>
+    <a class="item <?=$size?>" <?=$vv->wysiwyg()->attr()?> href="<?=$href?>" target="_blank"> <?=$imgTag?> </a>
 <?else:?>
-    <span class="item" <?=$vv->wysiwyg()->attr()?>> <?=$imgTag?> </span>
+    <span class="item <?=$size?>" <?=$vv->wysiwyg()->attr()?>> <?=$imgTag?> </span>
 <?endif?>
 
