@@ -9,9 +9,8 @@ use Localization\Lang;
 include_once __DIR__ . "/db.php";
 include_once __DIR__ . "/events.php";
 include_once __DIR__ . "/gump.php";
-include_once __DIR__ . "/mail-config.php";
-
 Classiq::install();
+include_once __DIR__ . "/mail-config.php";
 
 //loged in?
 if(User::connected()){
