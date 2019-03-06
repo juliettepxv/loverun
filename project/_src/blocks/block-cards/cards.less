@@ -1,6 +1,8 @@
 .block.block-cards{
 
   .row{
+
+    justify-content: center;
     >.card-item{
       margin-top: var(--spacing-medium);
       .card{
@@ -32,6 +34,22 @@
           }
           h4{
             .h3;
+          }
+        }
+
+        @media(max-width: @screen-sm-max){
+          flex-direction: row;
+          >*{
+            height: 100px;
+          }
+          .img{
+            flex-shrink: 0;
+            width: 150px;
+            height: 150px;
+          }
+          .txt{
+            min-height: 150px;
+            width: 100%;
           }
         }
       }

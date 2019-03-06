@@ -1,4 +1,8 @@
+
+
 .btn {
+
+
   text-decoration: none;
   text-align: center;
   .h5;
@@ -14,7 +18,11 @@
     //background-color: rgba(225, 255, 255, 0.25);
     width: var(--spacing-big);
     height: var(--spacing-big);
-    padding: 19px;
+    padding: 5px;
+    @media(min-width:@breakPoint ){
+      padding: 19px;
+    }
+
     margin-left: var(--spacing-small);
     border-radius: 100%;
 
@@ -33,10 +41,12 @@
 .big {
   .btn {
 
+    --border-size :3px;
+
     .bg-gradient;
     .pl-medium;
     .pr-small;
-    border: 3px solid @color-white;
+    border: var(--border-size) solid @color-white;
     color: @color-white;
     svg{
       display: flex;

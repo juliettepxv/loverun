@@ -28,21 +28,25 @@ $image=$vv->getDataAsRecord("image");
                  data-date-end="<?=DateTime::createFromFormat("Y-m-d H:i:s","2019-05-12 14:00:00")->getTimestamp()?>">
                 <div>
                     <span class="days">00</span>
-                    <i>Jours</i>
+                    <p>Jours</p>
                 </div>
                 <div>
                     <span class="hours">00</span>
-                    <i>Heures</i>
+                    <p>Heures</p>
                 </div>
                 <div>
                     <span class="minutes">00</span>
-                    <i>Minutes</i>
+                    <p>Minutes</p>
                 </div>
                 <div>
                     <span class="seconds">00</span>
-                    <i>Secondes</i>
+                    <p>Secondes</p>
                 </div>
             </div>
+        <div class="scroll-txt">
+            <div class="p">Scroll</div>
+            <?=pov()->svg->use("startup-arrow-down")?>
+        </div>
     </div>
     <div class="deco"></div>
 </div>

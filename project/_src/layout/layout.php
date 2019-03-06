@@ -13,7 +13,7 @@ if(is_a($vv,"\Classiq\Models\Page")){
         the()->htmlLayout()->hreflangs[$langCode]=$url;
     }
     //seo
-    the()->htmlLayout()->meta->title=$vv->urlpage->box()->meta_title_lang;
+    the()->htmlLayout()->meta->title=$vv->urlpage->box()->meta_title_lang." | Love Run Festival";
     the()->htmlLayout()->meta->description=$vv->urlpage->box()->meta_description_lang;
     if($vv->thumbnail){
         the()->htmlLayout()->ogImage=$vv->thumbnail()->sizeCover(500,400)->bgColor("ffffff")->jpg()->href();
@@ -34,7 +34,6 @@ if(!the()->requestUrl->isAjax){
         the()->htmlLayout()->install()->googleMap(site()->googleApiKey,"places");
     }
     the()->htmlLayout()->layoutVars->googleAnalyticsId=site()->googleAnalyticsId;
-    the()->htmlLayout()->layoutVars->wysiwyg=cq()->wysiwyg();
     the()->htmlLayout()->hreflang=the()->project->langCode;
     the()->htmlLayout()->favicon->favicon=the()->fileSystem->filesystemToHttp("project/logos/128-128.png");
     the()->htmlLayout()->addJavascriptTranslations();
