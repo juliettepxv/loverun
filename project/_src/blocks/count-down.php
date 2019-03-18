@@ -17,30 +17,30 @@ $image=$vv->getDataAsRecord("image");
             <?=$vv->wysiwyg()
                 ->field("texte_lang")
                 ->string(\Pov\Utils\StringUtils::FORMAT_NO_HTML_SINGLE_LINE)
-                ->setPlaceholder("Saisissez votre titre")
+                ->setPlaceholder(trad("Saisissez votre titre"))
                 ->htmlTag($vv->getData("balise","h1"))
             ?>
 
-            <div class="h5">DANS : </div>
+            <div class="h5"><?=trad("DANS")?> : </div>
 
             <div class="compteur"
                  data-count-down data-date-start="<?=pov()->utils->date->timestamp()?>"
                  data-date-end="<?=DateTime::createFromFormat("Y-m-d H:i:s","2019-05-12 14:00:00")->getTimestamp()?>">
                 <div>
                     <span class="days">00</span>
-                    <p>Jours</p>
+                    <p><?=trad("Jours")?></p>
                 </div>
                 <div>
                     <span class="hours">00</span>
-                    <p>Heures</p>
+                    <p><?=trad("Heures")?></p>
                 </div>
                 <div>
                     <span class="minutes">00</span>
-                    <p>Minutes</p>
+                    <p><?=trad("Minutes")?></p>
                 </div>
                 <div>
                     <span class="seconds">00</span>
-                    <p>Secondes</p>
+                    <p><?=trad("Secondes")?></p>
                 </div>
             </div>
         <div class="scroll-txt">

@@ -42,7 +42,7 @@ if($url){
                 <div id="cq-style">
                     <div class="machin">
                         <div text-center class="cq-box cq-th-danger">
-                            Il faut configurer un lien (<?=$href?>)
+                            <?=trad("Il faudrait configurer")?>
                         </div>
                     </div>
                 </div>

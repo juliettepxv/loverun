@@ -4,19 +4,18 @@
  * @var Classiq\Models\JsonModels\ListItem $vv
  *
  */
-
+$ar=[];
+$ar[trad("big")]="py-big";
+$ar[trad("medium")]="py-medium";
+$ar[trad("small")]="py-small";
 ?>
 
-<label>Espace</label>
+<label><?=trad("Style")?></label>
 <?=$vv->wysiwyg()->field("style")
     ->string()
     ->onSavedRefreshListItem($vv)
     ->setDefaultValue("py-big")
-    ->select([
-            "big"=>"py-big",
-            "medium"=>"py-medium",
-            "small"=>"py-small"
-    ])
+    ->select($ar)
 
 ?>
 

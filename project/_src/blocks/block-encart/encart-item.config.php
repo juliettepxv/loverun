@@ -9,7 +9,7 @@
 
 ?>
 
-<label>Image</label>
+<label><?=trad("Image")?></label>
 <?=$vv->wysiwyg()->field("targetUid")
     ->file()
     ->onSavedRefreshListItem($vv)

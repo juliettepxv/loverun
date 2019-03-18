@@ -7,7 +7,7 @@ use Classiq\Models\JsonModels\ListItem;
         <?=$vv->wysiwyg()
             ->field("title_lang")
             ->string(\Pov\Utils\StringUtils::FORMAT_NO_HTML_SINGLE_LINE)
-            ->setPlaceholder("Question ici")
+            ->setPlaceholder(trad("Question ici"))
             ->htmlTag("div")
             ->addClass("h5")
         ?>
@@ -17,7 +17,7 @@ use Classiq\Models\JsonModels\ListItem;
         <?=$vv->wysiwyg()
             ->field("txt_lang")
             ->string(\Pov\Utils\StringUtils::FORMAT_HTML)
-            ->setPlaceholder("Réponse là...")
+            ->setPlaceholder(trad("Réponse là..."))
             ->htmlTag("div")
             ->addClass("")
         ?>

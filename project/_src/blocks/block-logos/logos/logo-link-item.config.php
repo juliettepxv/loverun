@@ -5,9 +5,12 @@
  *
  *
  */
+$ar=[];
+$ar[trad("Petit")]="small";
+$ar[trad("Grand")]="bg-big";
 ?>
 
-<label>Image</label>
+<label><?=trad("Image")?></label>
 <?=$vv->wysiwyg()->field("targetUid")
     ->file()
     ->onSavedRefreshListItem($vv)
@@ -15,7 +18,7 @@
     ->render()
 ?>
 
-<label>Lien</label>
+<label><?=trad("Lien")?></label>
 <?=$vv->wysiwyg()->field("href")
     ->string()
     ->onSavedRefreshListItem($vv)
@@ -23,15 +26,12 @@
 ?>
 
 
-<label>Taille</label>
+<label><?=trad("Size")?></label>
 <?=$vv->wysiwyg()->field("size")
     ->string()
     ->onSavedRefreshListItem($vv)
     ->setDefaultValue("small")
-    ->select([
-        "Petit"=>"small",
-        "Grand"=>"big"
-    ]);
+    ->select($ar);
 ?>
 
 <?/*

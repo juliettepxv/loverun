@@ -10,7 +10,7 @@
             <?=$vv->wysiwyg()
                 ->field("texte_lang")
                 ->string(\Pov\Utils\StringUtils::FORMAT_HTML)
-                ->setPlaceholder("Saisissez votre texte")
+                ->setPlaceholder(trad("Saisissez votre texte"))
                 ->setMediumButtons([
                     "h2","h3",
                     "bold","italic","underline","strikethrough",

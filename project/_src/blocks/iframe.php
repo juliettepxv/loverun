@@ -31,7 +31,7 @@ if($iframe){
                     <?if(!$iframeTag):?>
                         <div id="cq-style" class="gr">
                             <div text-center class="cq-box cq-th-danger">
-                                Il faudrait configurer cette iframe
+                                <?=trad("Il faudrait configurer cette iframe")?>
                             </div>
                         </div>
                     <?else:?>

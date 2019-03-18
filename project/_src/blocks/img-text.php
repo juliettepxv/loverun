@@ -28,7 +28,7 @@ $invert=$vv->getData("invert")?"invert":"";
             <? elseif (\Classiq\Wysiwyg\Wysiwyg::$enabled): ?>
                 <div id="cq-style">
                         <div text-center class="cq-box cq-th-danger">
-                            Il faut choisir une image
+                            <?=trad("Il faudrait configurer")?>
                         </div>
                 </div>
             <? endif ?>
@@ -39,7 +39,7 @@ $invert=$vv->getData("invert")?"invert":"";
                 <?= $vv->wysiwyg()
                     ->field("texte_lang")
                     ->string(\Pov\Utils\StringUtils::FORMAT_HTML)
-                    ->setPlaceholder("Saisissez votre texte")
+                    ->setPlaceholder(trad("Saisissez votre texte"))
                     //->setMediumButtons(["bold", "italic","select-record","removeFormat"])
                     ->htmlTag("div")
                     ->addClass("txt")

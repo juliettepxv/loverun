@@ -1,3 +1,3 @@
-<label>Image</label>
+<label><?=trad("Image")?></label>
 <?=cq()->icoWysiwyg("images-image")?>
 

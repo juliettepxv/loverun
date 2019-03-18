@@ -3,33 +3,33 @@
  * Un fichier à télécharger
  * @var Classiq\Models\JsonModels\ListItem $vv
  */
+$ar=[];
+$ar["normal"]="normal";
+$ar["gradient"]="bg-gradient";
+$ar["big"]="big";
 ?>
 
 
-<label>Style de titre</label>
+<label><?=trad("Style de titre")?>Style de titre</label>
 <?=$vv->wysiwyg()->field("style")
     ->string()
     ->onSavedRefreshListItem($vv)
     ->setDefaultValue("normal")
-    ->select([
-        "normal"=>"normal",
-        "gradient"=>"bg-gradient",
-        "big"=>"big"
-    ])
+    ->select($ar)
 
 ?>
 
-<label>Texte affiché</label>
+<label><?=trad("Style de titre")?></label>
 <?foreach (the()->project->languages as $lang):?>
 <?=$vv->wysiwyg()->field("label_$lang")
         ->string()
         ->onSavedRefreshListItem($vv)
         ->isTranslated($lang)
-        ->input("text","Texte du lien")
+        ->input("text",trad("Texte du lien"))
 ?>
 <?endforeach;?>
 
-<label>Choissez une page</label>
+<label><?=trad("Choissez une page")?></label>
 <?=$vv->wysiwyg()->field("page")
     ->recordPicker("Page")
     ->onSavedRefreshListItem($vv)
@@ -37,7 +37,7 @@
     ->render()
 ?>
 
-<label>Choissez un fichier</label>
+<label><?=trad("Choissez un fichier")?></label>
 <?=$vv->wysiwyg()->field("file")
     ->file()
     ->onSavedRefreshListItem($vv)
@@ -45,7 +45,7 @@
     ->render();
 ?>
 
-<label>Url</label>
+<label><?=trad("Url")?>Url</label>
 <?=$vv->wysiwyg()->field("url")
         ->string()
         ->onSavedRefreshListItem($vv)

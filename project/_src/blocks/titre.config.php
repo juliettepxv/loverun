@@ -7,7 +7,7 @@
 
 ?>
 
-<label>Style de titre</label>
+<label><?=trad("Style de titre")?></label>
 <?=$vv->wysiwyg()->field("style")
     ->string()
     ->onSavedRefreshListItem($vv)
@@ -19,7 +19,7 @@
 
 ?>
 <?if($vv->getData("style")=="pill"):?>
-    <label>Vous souhaitez intégrer une image de fond?</label>
+    <label><?=trad("Vous souhaitez intégrer une image de fond?")?></label>
     <?=$vv->wysiwyg()->field("image")
         ->file()
         ->setMimeAcceptImagesOnly()

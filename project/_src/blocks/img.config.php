@@ -5,7 +5,7 @@
  *
  */
 ?>
-<label>Choisir une image</label>
+<label><?=trad("Choisir une image")?></label>
 <?= $vv->wysiwyg()->field("targetUid")
     ->file()
     ->setMimeAcceptImagesOnly()
@@ -13,11 +13,11 @@
     ->button()
     ->render();
 ?>
-<label>Activer le zoom?</label>
+<label><?=trad("zoom")?></label>
 <?=$vv->wysiwyg()
     ->field("zoom")
     ->bool()
     ->onSavedRefreshListItem($vv)
-    ->checkbox("Activer le zoom")
+    ->checkbox(trad("Activer le zoom"))
 ?>
 

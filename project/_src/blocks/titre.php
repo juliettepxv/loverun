@@ -20,7 +20,7 @@ if($style=="pill"){
             <?=$vv->wysiwyg()
                 ->field("texte_lang")
                 ->string(\Pov\Utils\StringUtils::FORMAT_NO_HTML_SINGLE_LINE)
-                ->setPlaceholder("Saisissez votre titre")
+                ->setPlaceholder(trad("Saisissez votre titre"))
                 ->htmlTag($vv->getData("balise","h2"))
             ?>
     </div>

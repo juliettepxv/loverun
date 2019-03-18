@@ -7,33 +7,35 @@
  *
  */
 
+$ar1=[];
+$ar1[trad("Icones texte")]="icones-texte";
+$ar1[trad("Icones images")]="icones-image";
+$ar1[trad("Colonnes")]="colonnes";
+
+$ar2=[];
+$ar2[trad("Blanc")]="bg-white";
+$ar2[trad("Couleur")]="bg-gradient";
+
 ?>
 
-<label>Style</label>
+<label><?=trad("Style")?></label>
 <?=$vv->wysiwyg()->field("style")
     ->string()
     ->onSavedRefreshListItem($vv)
     ->setDefaultValue("icones-texte")
-    ->select([
-            "Icones texte"=>"icones-texte",
-            "Icones images"=>"icones-image",
-            "Colonnes"=>"colonnes"
-    ])
+    ->select($ar1)
 ?>
-<label>Couleur</label>
+<label><?=trad("Couleur")?></label>
 <?=$vv->wysiwyg()->field("color")
     ->string()
     ->onSavedRefreshListItem($vv)
     ->setDefaultValue("bg-white")
-    ->select([
-        "Blanc"=>"bg-white",
-        "Couleur"=>"bg-gradient"
-    ]);
+    ->select($ar2);
 ?>
 <?=$vv->wysiwyg()->field("deco")
     ->bool()
     ->onSavedRefreshListItem($vv)
-    ->checkbox("Afficher le motif");
+    ->checkbox(trad("Afficher le motif"));
 
 
 

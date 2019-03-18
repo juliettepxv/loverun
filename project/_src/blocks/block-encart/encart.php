@@ -16,14 +16,14 @@ $deco=$vv->getData("deco",null)?"deco":"";
             <?=$vv->wysiwyg()
                 ->field("title_lang")
                 ->string()
-                ->setPlaceholder("Titre ici")
+                ->setPlaceholder(trad("Titre ici"))
                 ->htmlTag("h2")?>
 
             <?=$vv->wysiwyg()->field("cards")
                 ->listJson("blocks/block-encart/encart-item")
                 ->horizontal()
                 ->contextMenuPosition(POSITION_TOP)
-                ->blockPickerEmptyMessage("Ajoutez des éléments")
+                ->blockPickerEmptyMessage(trad("Ajoutez des éléments"))
                 ->contextMenuSize(SIZE_SMALL)
                 ->htmlTag("div")
                 ->addClass("list")

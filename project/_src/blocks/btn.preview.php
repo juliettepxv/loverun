@@ -1,3 +1,3 @@
-<label>Bouton</label>
+<label><?=trad("Bouton")?></label>
 <?=pov()->svg->use("cq-link")?>
 

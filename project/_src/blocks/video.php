@@ -21,7 +21,7 @@ if($file){
         <div id="cq-style">
             <div class="machin">
                 <div text-center class="cq-box cq-th-danger">
-                    Il faut choisir une vidéo
+                    <?=trad("Il faudrait configurer")?>
                 </div>
             </div>
         </div>

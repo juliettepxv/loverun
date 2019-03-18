@@ -1,3 +1,3 @@
-<label>Titre</label>
+<label><?=trad("Titre")?></label>
 <?=cq()->icoWysiwyg("art-typo")?>
 

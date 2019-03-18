@@ -9,7 +9,7 @@
 
 ?>
 
-<label>Image</label>
+<label><?=trad("Image")?></label>
 <?=$vv->wysiwyg()->field("targetUid")
     ->file()
     ->onSavedRefreshListItem($vv)
@@ -17,14 +17,14 @@
     ->render()
 ?>
 
-<label>Choissez une page</label>
+<label><?=trad("Choissez une page")?></label>
 <?=$vv->wysiwyg()->field("page")
     ->recordPicker("Page")
     ->onSavedRefreshListItem($vv)
     ->buttonRecord()
     ->render()
 ?>
-<label>ou une url</label>
+<label><?=trad("ou une url")?></label>
 <?=$vv->wysiwyg()->field("url")
     ->string()
     ->onSavedRefreshListItem($vv)
