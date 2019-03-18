@@ -5,17 +5,16 @@ the()->fileSystem=new \Pov\Configs\FileSystem("project");
 the()->configProjectUrl->seoActive=true;
 the()->boot->loadProject("project");
 the()->project->langCode="en";
-the()->project->languages=["fr","en"];
+the()->project->languages=["fr","en","es"];
 the()->project->languagesUrls=[
     "fr"=>"http://localhost/github/loverun/fr",
-    "en"=>"http://localhost/github/loverun/en"
+    "en"=>"http://localhost/github/loverun/en",
+    "es"=>"http://localhost/github/loverun/es"
 ];
 //force https?
 the()->configProjectUrl->forceHttps=false;
-// Traductions ui.
-// https://docs.google.com/spreadsheets/d/1kefhXt0Z7g0P2cGItQK4k_hqhSoFTMaJyvzNYjKeqw8
-// Copiez-collez ce google Sheet pour pouvoir le modifier puis modifiez l'url. Vous pouvez bien entendu utiliser un csv en local mais c'est moins pratique :)
-the()->project->config_translations_csv_url="https://docs.google.com/spreadsheets/d/1kefhXt0Z7g0P2cGItQK4k_hqhSoFTMaJyvzNYjKeqw8/export?gid=0&format=csv";
+// Traductions ui loverun only
+the()->project->config_translations_csv_url="https://docs.google.com/spreadsheets/d/1B4faD-ETiL5KLturBE7MSn6MAPYk8yfOcPTROXJG_4w/export?gid=0&format=csv";
 the()->project->config_translations_debug=true; //quand true recharge à chaque fois le CSV
 
 //config options

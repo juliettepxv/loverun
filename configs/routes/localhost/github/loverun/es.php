@@ -1,10 +1,10 @@
 <?php
 the()->fmkHttpRoot="/github/loverun";// /github/classiq-startup
-the()->configProjectUrl=new \Pov\Configs\ProjectUrl("localhost/github/loverun/fr"); // localhost/github/classiq-startup/fr
+the()->configProjectUrl=new \Pov\Configs\ProjectUrl("localhost/github/loverun/es"); // localhost/github/classiq-startup/fr
 the()->fileSystem=new \Pov\Configs\FileSystem("project");
 the()->configProjectUrl->seoActive=true;
 the()->boot->loadProject("project");
-the()->project->langCode="fr";
+the()->project->langCode="es";
 the()->project->languages=["fr","en","es"];
 the()->project->languagesUrls=[
     "fr"=>"http://localhost/github/loverun/fr",
