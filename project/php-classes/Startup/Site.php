@@ -52,4 +52,7 @@ class Site extends AbstractSingleton
     public function homePage(){
         return cq()->homePage();
     }
+
+    public $facebookUrl="";
+    public $instaUrl="";
 }

@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/Classiq.git",
-                "reference": "752f2309379b7e536374a76ff329ea13c37f947d"
+                "reference": "8cbe0ef14ab3db1869a1ad4a463246c581092e09"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/752f2309379b7e536374a76ff329ea13c37f947d",
-                "reference": "752f2309379b7e536374a76ff329ea13c37f947d",
+                "url": "https://api.github.com/repos/davidmars/Classiq/zipball/8cbe0ef14ab3db1869a1ad4a463246c581092e09",
+                "reference": "8cbe0ef14ab3db1869a1ad4a463246c581092e09",
                 "shasum": ""
             },
             "require": {
@@ -41,7 +41,7 @@
                 "source": "https://github.com/davidmars/Classiq/tree/master",
                 "issues": "https://github.com/davidmars/Classiq/issues"
             },
-            "time": "2019-02-22T19:19:31+00:00"
+            "time": "2019-03-18T15:39:29+00:00"
         },
         {
             "name": "davidmars/localization",
@@ -127,12 +127,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davidmars/pov-2018.git",
-                "reference": "8bc157c4b34791522b1c077adceec0193d340659"
+                "reference": "38161a34fae36116371ed808b15cbf194741abaf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davidmars/pov-2018/zipball/8bc157c4b34791522b1c077adceec0193d340659",
-                "reference": "8bc157c4b34791522b1c077adceec0193d340659",
+                "url": "https://api.github.com/repos/davidmars/pov-2018/zipball/38161a34fae36116371ed808b15cbf194741abaf",
+                "reference": "38161a34fae36116371ed808b15cbf194741abaf",
                 "shasum": ""
             },
             "require": {
@@ -152,7 +152,7 @@
                 "source": "https://github.com/davidmars/pov-2018/tree/master",
                 "issues": "https://github.com/davidmars/pov-2018/issues"
             },
-            "time": "2019-02-22T17:50:13+00:00"
+            "time": "2019-03-18T13:50:15+00:00"
         },
         {
             "name": "davidmars/redbean",
