@@ -6,7 +6,7 @@
  */
 /** @var \Classiq\Models\Filerecord $image */
 $image=$vv->getDataAsRecord("image");
-
+$date=$vv->getData("date","2019-05-12T14:00");
 ?>
 <div <?=$vv->wysiwyg()->attr()?> <?=$view->attrRefresh($vv->uid())?> class="block block-count-down">
     <?if($image):?>
@@ -25,7 +25,7 @@ $image=$vv->getDataAsRecord("image");
 
             <div class="compteur"
                  data-count-down data-date-start="<?=pov()->utils->date->timestamp()?>"
-                 data-date-end="<?=DateTime::createFromFormat("Y-m-d H:i:s","2019-05-12 14:00:00")->getTimestamp()?>">
+                 data-date-end="<?=DateTime::createFromFormat("Y-m-d\TH:i",$date)->getTimestamp()?>">
                 <div>
                     <span class="days">00</span>
                     <p><?=trad("Jours")?></p>
