@@ -10,7 +10,7 @@ $ar["big"]="big";
 ?>
 
 
-<label><?=trad("Style de titre")?>Style de titre</label>
+<label><?=trad("Style")?></label>
 <?=$vv->wysiwyg()->field("style")
     ->string()
     ->onSavedRefreshListItem($vv)
@@ -19,7 +19,7 @@ $ar["big"]="big";
 
 ?>
 
-<label><?=trad("Style de titre")?></label>
+<label><?=trad("Texte")?></label>
 <?foreach (the()->project->languages as $lang):?>
 <?=$vv->wysiwyg()->field("label_$lang")
         ->string()
@@ -45,7 +45,7 @@ $ar["big"]="big";
     ->render();
 ?>
 
-<label><?=trad("Url")?>Url</label>
+<label><?=trad("Url")?></label>
 <?=$vv->wysiwyg()->field("url")
         ->string()
         ->onSavedRefreshListItem($vv)
