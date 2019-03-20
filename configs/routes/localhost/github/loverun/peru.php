@@ -17,7 +17,7 @@ the()->configProjectUrl->forceHttps=false;
 the()->project->config_translations_csv_url="https://docs.google.com/spreadsheets/d/1B4faD-ETiL5KLturBE7MSn6MAPYk8yfOcPTROXJG_4w/export?gid=0&format=csv";
 the()->project->config_translations_debug=true; //quand true recharge à chaque fois le CSV
 \Classiq\Wysiwyg\Wysiwyg::$defaultWysiwygLanguage="es";
-
+site()->isPerou=true;
 //config options
 
 //Google Map etc...

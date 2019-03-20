@@ -43,6 +43,7 @@ class Site extends AbstractSingleton
         "blocks/separator",
         "blocks/count-down"
     ];
+    public $isPerou =false;
 
     /**
      * Renvoie la home page

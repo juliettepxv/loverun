@@ -7,9 +7,15 @@ $menu=\Classiq\Models\Nav::getByName("menu",true);
 
     <div id="nav-bar" >
 
-        <a class="logo" href="<?=cq()->homePage()->href()?>">
-            <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo.svg")?>?v=<?=the()->version()?>">
-        </a>
+        <?if(site()->isPerou):?>
+            <a class="logo peru" href="<?=cq()->homePage()->href()?>">
+                <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo-peru.svg")?>?v=<?=the()->version()?>">
+            </a>
+        <?else:?>
+            <a class="logo" href="<?=cq()->homePage()->href()?>">
+                <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo.svg")?>?v=<?=the()->version()?>">
+            </a>
+        <?endif?>
 
         <button data-nav-menu-toggle class="burger d-flex unstyled">
             <?=pov()->svg->use("startup-burger")->addClass("visible-nav-closed")?>
@@ -23,9 +29,19 @@ $menu=\Classiq\Models\Nav::getByName("menu",true);
         <div class="menu-wrap">
 
 
-            <a class="logo" href="<?=cq()->homePage()->href()?>">
-                <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo.svg")?>?v=<?=the()->version()?>">
-            </a>
+
+            <?if(site()->isPerou):?>
+                <a class="logo peru" href="<?=cq()->homePage()->href()?>">
+                <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo-peru.svg")?>?v=<?=the()->version()?>">
+                </a>
+            <?else:?>
+                <a class="logo" href="<?=cq()->homePage()->href()?>">
+                    <img alt="logo loverun" src="<?=the()->fileSystem->filesystemToHttp("project/svg/logo.svg")?>?v=<?=the()->version()?>">
+                </a>
+            <?endif?>
+
+
+
 
             <?=$menu->wysiwyg()->field("items")
                 ->listJson(["layout/item"])
