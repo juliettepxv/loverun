@@ -26,13 +26,22 @@ export default class CountDown{
             if( new Date().getTime() - startTime > 1000 * 60 * 3){
                 refresh();
             }
+            if(!$main.is("body div")){
+                clearInterval(interv);
+                return;
+            }
             debut+=1000;
 
             let now=new Date();
             now.setTime(debut);
-            console.log(now.toTimeString());
 
             let remain=(fin-debut)/1000;
+            if(remain<0){
+                remain=0;
+                $main.closest(".container").find(".h5").css("display","none");
+                $main.css("display","none");
+                return;
+            }
             days=String(Math.floor(remain/(60*60*24))).padStart(2, '0');
             $days.text(days);
             reste=remain % (60*60*24);
@@ -42,9 +51,7 @@ export default class CountDown{
             $minutes.text(String(Math.floor(reste/(60))).padStart(2, '0'));
             reste=reste % (60);
             $seconds.text(String(reste).padStart(2, '0'));
-            if(!$main.is("body div")){
-                clearInterval(interv);
-            }
+
         }
 
         loop();
